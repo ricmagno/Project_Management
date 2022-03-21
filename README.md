@@ -1,33 +1,56 @@
 
 # Table of Contents
 
-1.  [Project Management](#org34c67bb)
-    1.  [STRATEGY ARTIFACTS](#orge1e1f1a)
-    2.  [LOGS AND REGISTERS](#org639dd24)
-    3.  [PLANS](#orgbbaf9cc)
-    4.  [HIERARCHY CHARTS](#org96d56cb)
-    5.  [BASELINES](#org6bbab9e)
-    6.  [VISUAL DATA AND INFORMATION](#orgd1785aa)
-    7.  [REPORTS](#org723e6b7)
-    8.  [AGREEMENTS AND CONTRACTS](#orgf15ad05)
-    9.  [OTHER ARTIFACTS](#orgb915dec)
-    10. [ARTIFACTS APPLIED ACROSS PERFORMANCE DOMAINS](#org8c04e37)
+1.  [Project Management](#org307d434)
+    1.  [STRATEGY ARTIFACTS](#orgf19a231)
+    2.  [LOGS AND REGISTERS](#orgfa7e2c9)
+    3.  [PLANS](#orga26e7ee)
+    4.  [HIERARCHY CHARTS](#org9110ce1)
+    5.  [BASELINES](#org9484ba4)
+    6.  [VISUAL DATA AND INFORMATION](#orgb530769)
+    7.  [REPORTS](#org42439f8)
+    8.  [AGREEMENTS AND CONTRACTS](#orgd9af64d)
+    9.  [OTHER ARTIFACTS](#org88cd447)
+    10. [ARTIFACTS APPLIED ACROSS PERFORMANCE DOMAINS](#orgd93d2ad)
+2.  [Meetings and events](#orgdc631bc)
+    1.  [Backlog refinement.](#orgcd9d33c)
+    2.  [Bidder conference.](#orgc758486)
+    3.  [Change control board.](#orgc1ec94c)
+    4.  [Daily standup.](#orgfce92e4)
+    5.  [Iteration planning.](#org97e7d09)
+    6.  [Iteration review.](#orgd7ab566)
+    7.  [Kickoff.](#org6276379)
+    8.  [Lessons learned meeting.](#org9482573)
+    9.  [Planning meeting.](#org475dc1d)
+    10. [Project closeout.](#org5ab5a9d)
+    11. [Project review.](#org1477ec6)
+    12. [Release planning.](#orgb5bce32)
+    13. [Retrospective.](#orgddc81cd)
+    14. [Risk review.](#orgd35aab6)
+    15. [Status meeting.](#orgf9c3c5e)
+    16. [Steering committee.](#org186ed3d)
+3.  [Other methods](#org452a5a1)
+    1.  [Impact mapping.](#org5513780)
+    2.  [Modeling.](#org88e6de9)
+    3.  [Net Promoter Score (NPS®).](#org063ad58)
+    4.  [Prioritization schema. Prioritization schema are methods used to prioritize portfolio, program, or project components, as well as requirements, risks, features, or other product information.](#orgac5b379)
+    5.  [Timebox.](#org3270590)
 
 
-<a id="org34c67bb"></a>
+<a id="org307d434"></a>
 
 # Project Management
 
 Project Management org templates
 
 
-<a id="orge1e1f1a"></a>
+<a id="orgf19a231"></a>
 
 ## STRATEGY ARTIFACTS
 
 Documents that are created prior to or at the start of the project that address strategic, business, or high-level information about the project. Strategy artifacts are developed at the start of a project and do not normally change, though they may be reviewed throughout the project.
 
--   Business case. A business case is a value proposition for a proposed project that may include financial and nonfinancial benefits.
+-   Business case <business_case>. A business case is a value proposition for a proposed project that may include financial and nonfinancial benefits.
 -   Business model canvas. This artifact is a one-page visual summary that describes the value proposition, infrastructure, customers, and finances. These are often used in lean start-up situations.
 -   Project brief. A project brief provides a high-level overview of the goals, deliverables, and processes for the project.
 -   Project charter. A project charter is a document issued by the project initiator or sponsor that formally authorizes the existence of a project and provides the project manager with the authority to apply organizational resources to project activities.
@@ -35,7 +58,7 @@ Documents that are created prior to or at the start of the project that address 
 -   Roadmap. This document provides a high-level time line that depicts milestones, significant events, reviews, and decision points.
 
 
-<a id="org639dd24"></a>
+<a id="orgfa7e2c9"></a>
 
 ## LOGS AND REGISTERS
 
@@ -51,7 +74,7 @@ Logs and registers are used to record continuously evolving aspects of the proje
 -   Stakeholder register. A stakeholder register records information about project stakeholders, which includes an assessment and classification of project stakeholders.
 
 
-<a id="orgbbaf9cc"></a>
+<a id="orga26e7ee"></a>
 
 ## PLANS
 
@@ -74,7 +97,7 @@ A plan is a proposed means of accomplishing something. Project teams develop pla
 -   Test plan. This document describes deliverables that will be tested, tests that will be conducted, and the processes that will be used in testing. It forms the basis for formally testing the components and deliverables.
 
 
-<a id="org96d56cb"></a>
+<a id="org9110ce1"></a>
 
 ## HIERARCHY CHARTS
 
@@ -87,7 +110,7 @@ Hierarchy charts begin with high-level information that is progressively decompo
 -   Work breakdown structure. This chart is a hierarchical decomposition of the total scope of work to be carried out by the project team to accomplish the project objectives and create the required deliverables.
 
 
-<a id="org6bbab9e"></a>
+<a id="org9484ba4"></a>
 
 ## BASELINES
 
@@ -103,7 +126,7 @@ are used for comparison to manage, measure, and control project execution.
 -   Scope baseline. This baseline is the approved version of a scope statement, work breakdown structure (WBS), and its associated WBS dictionary that can be changed using formal change control procedures and is used as the basis for comparison to actual results.
 
 
-<a id="orgd1785aa"></a>
+<a id="orgb530769"></a>
 
 ## VISUAL DATA AND INFORMATION
 
@@ -140,7 +163,7 @@ to the rest of the organization, enabling timely knowledge sharing.
 -   Velocity chart. This chart tracks the rate at which the deliverables are produced, validated, and accepted within a predefined interval.
 
 
-<a id="org723e6b7"></a>
+<a id="org42439f8"></a>
 
 ## REPORTS
 
@@ -151,7 +174,7 @@ Reports are formal records or summaries of information. Reports communicate rele
 -   Status report. This document provides a report on the current status of the project. It may include information on progress since the last report and forecasts for cost and schedule performance.
 
 
-<a id="orgf15ad05"></a>
+<a id="orgd9af64d"></a>
 
 ## AGREEMENTS AND CONTRACTS
 
@@ -168,7 +191,7 @@ time period. These contracts can be used for architectural, engineering, or info
 -   Other agreements. Other types of agreements include memorandum of understanding (MOU), memorandum of agreement (MOA), service level agreement (SLA), basic ordering agreement (BOA), among others.
 
 
-<a id="orgb915dec"></a>
+<a id="org88cd447"></a>
 
 ## OTHER ARTIFACTS
 
@@ -192,7 +215,7 @@ and operating guidelines, and establishes clear expectations regarding acceptabl
 -   User story. A user story is a brief description of an outcome for a specific user, which is a promise of a conversation to clarify details.
 
 
-<a id="org8c04e37"></a>
+<a id="orgd93d2ad"></a>
 
 ## ARTIFACTS APPLIED ACROSS PERFORMANCE DOMAINS
 
@@ -252,7 +275,7 @@ Different artifacts are more likely to be useful in different performance domain
 
 <tbody>
 <tr>
-<td class="org-left"><a href="./Strategy/business_case.html">Business case</a></td>
+<td class="org-left"><a href="business_case">business_case</a>  <a href="./Strategy/business_case.html">Business case</a></td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">x</td>
 <td class="org-left">&#xa0;</td>
@@ -1357,6 +1380,170 @@ Different artifacts are more likely to be useful in different performance domain
 </tr>
 </tbody>
 </table>
+
+
+<a id="orgdc631bc"></a>
+
+# Meetings and events
+
+Meetings are an important means for engaging the project team and other stakeholders. They are a primary means of communication throughout the project.
+
+
+<a id="orgcd9d33c"></a>
+
+## Backlog refinement.
+
+At a backlog refinement meeting, the backlog is progressively elaborated and (re)prioritized to identify the work that can be accomplished in an upcoming iteration.
+
+
+<a id="orgc758486"></a>
+
+## Bidder conference.
+
+Meetings with prospective sellers prior to the preparation of a bid or proposal to ensure all prospective vendors have a clear and common understanding of the procurement. This meeting may also be known as contractor conferences, vendor conferences, or pre-bid conferences.
+
+
+<a id="orgc1ec94c"></a>
+
+## Change control board.
+
+A change control board meeting includes the group of people
+who are accountable for reviewing, evaluating, approving, delaying, or rejecting changes
+to the project. The decisions made at this meeting are recorded and communicated to the appropriate stakeholders. This meeting may also be referred to as a change control meeting.
+
+
+<a id="orgfce92e4"></a>
+
+## Daily standup.
+
+A standup is a brief collaboration meeting during which the project team reviews its progress from the previous day, declares intentions for the current day, and highlights any obstacles encountered or anticipated. This meeting may also be referred to as a daily scrum.
+
+
+<a id="org97e7d09"></a>
+
+## Iteration planning.
+
+An iteration planning meeting is used to clarify the details of the backlog items, acceptance criteria, and work effort required to meet an upcoming iteration commitment. This meeting may also be referred to as a sprint planning meeting.
+
+
+<a id="orgd7ab566"></a>
+
+## Iteration review.
+
+An iteration review is held at the end of an iteration to demonstrate the work that was accomplished during the iteration. This meeting may also be referred to as a sprint review.
+
+
+<a id="org6276379"></a>
+
+## Kickoff.
+
+A kickoff meeting is a gathering of project team members and other key stakeholders at the outset of a project to formally set expectations, gain a common understanding, and commence work. It establishes the start of a project, phase,
+or iteration.
+
+
+<a id="org9482573"></a>
+
+## Lessons learned meeting.
+
+A lessons learned meeting is used to identify and share the knowledge gained during a project, phase, or iteration with a focus on improving project team performance. This meeting can address situations that could have been handled better in addition to good practices and situations that produced very favorable outcomes.
+
+
+<a id="org475dc1d"></a>
+
+## Planning meeting.
+
+A planning meeting is used to create, elaborate, or review a plan or plans and secure commitment for the plan(s).
+
+
+<a id="org5ab5a9d"></a>
+
+## Project closeout.
+
+A project closeout meeting is used to obtain final acceptance of the delivered scope from the sponsor, product owner, or client. This meeting indicates that the product delivery is complete.
+
+
+<a id="org1477ec6"></a>
+
+## Project review.
+
+A project review meeting is an event at the end of a phase or a project to assess the status, evaluate the value delivered, and determine if the project is ready to move to the next phase, or transition to operations.
+
+
+<a id="orgb5bce32"></a>
+
+## Release planning.
+
+Release planning meetings identify a high-level plan for releasing or transitioning a product, deliverable, or increment of value.
+
+
+<a id="orgddc81cd"></a>
+
+## Retrospective.
+
+A retrospective is a regularly occurring workshop in which participants explore their work and results in order to improve both process and product. Retrospectives are a form of lessons learned meeting.
+
+
+<a id="orgd35aab6"></a>
+
+## Risk review.
+
+A meeting to analyze the status of existing risks and identify new risks. This includes determining if the risk is still active and if there have been changes to the risk attributes (such as probability, impact, urgency, etc.). Risk responses are evaluated to determine if they are effective or should be updated. New risks may be identified and analyzed and risks that are no longer active may be closed. Risk reassessment is an example of a risk-review meeting.
+
+
+<a id="orgf9c3c5e"></a>
+
+## Status meeting.
+
+A status meeting is a regularly scheduled event to exchange and analyze information about the current progress of the project and its performance.
+
+
+<a id="org186ed3d"></a>
+
+## Steering committee.
+
+A meeting where senior stakeholders provide direction and support to the project team and make decisions outside of the project team’s authority.
+
+
+<a id="org452a5a1"></a>
+
+# Other methods
+
+The methods described in this section don’t fit into a specific category; however, they are common methods that are used for a variety of purposes on projects.
+
+
+<a id="org5513780"></a>
+
+## Impact mapping.
+
+Impact mapping is a strategic planning method that serves as a visual roadmap for the organization during product development.
+
+
+<a id="org88e6de9"></a>
+
+## Modeling.
+
+Modeling is the process of creating simplified representations of systems, solutions, or deliverables such as prototypes, diagrams, or storyboards. Modeling can facilitate further analysis by identifying gaps in information, areas of miscommunication, or additional requirements.
+
+
+<a id="org063ad58"></a>
+
+## Net Promoter Score (NPS®).
+
+An index that measures the willingness of customers to recommend an organization’s products or services to others. The score is used as a proxy for gauging the customer’s overall satisfaction with an organization’s product or service and the customer’s loyalty to the brand.
+
+
+<a id="orgac5b379"></a>
+
+## Prioritization schema. Prioritization schema are methods used to prioritize portfolio, program, or project components, as well as requirements, risks, features, or other product information.
+
+Examples include a multicriteria weighted analysis and the MoSCoW (must have, should have, could have, and won’t have) method.
+
+
+<a id="org3270590"></a>
+
+## Timebox.
+
+A timebox is a short, fixed period of time in which work is to be completed, such as 1 week, 2 weeks, or 1 month.
 
 
 # Footnotes
