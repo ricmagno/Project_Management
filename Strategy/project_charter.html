@@ -1,0 +1,1263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-03-21 Mon 21:51 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Project Charter</title>
+<meta name="author" content="Ricardo Antunes" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Project Charter
+<br />
+<span class="subtitle">Project Name</span>
+</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orge2f64f3">1. Version History</a></li>
+<li><a href="#org8cad984">2. Note to the Author</a></li>
+<li><a href="#org9fa4877">3. Introduction</a>
+<ul>
+<li><a href="#orgea2d7d1">3.1. Purpose of Project Charter</a></li>
+</ul>
+</li>
+<li><a href="#orgca70066">4. Project And Product Overview</a></li>
+<li><a href="#orgd8f047e">5. Justification</a>
+<ul>
+<li><a href="#orgf979e68">5.1. Business Need</a></li>
+<li><a href="#org497b49c">5.2. Public Health And Business Impact</a></li>
+<li><a href="#orgb5d6daa">5.3. Strategic Alignment</a></li>
+</ul>
+</li>
+<li><a href="#orgcd8f542">6. Scope</a>
+<ul>
+<li><a href="#org8ad5d56">6.1. Objectives</a>
+<ul>
+<li><a href="#orgcbb31d0">6.1.1. [Insert Objective 1]</a></li>
+<li><a href="#org337a5d8">6.1.2. [Insert Objective 2]</a></li>
+<li><a href="#org78c89cf">6.1.3. [Add additional bullets as necessary]</a></li>
+</ul>
+</li>
+<li><a href="#orgae9568a">6.2. High-Level Requirements</a></li>
+<li><a href="#orgbfc5458">6.3. Major Deliverables</a></li>
+<li><a href="#orga29432f">6.4. Boundaries</a></li>
+</ul>
+</li>
+<li><a href="#org62b516f">7. Duration</a>
+<ul>
+<li><a href="#org56e46c5">7.1. Timeline</a></li>
+<li><a href="#orgb4fcc1b">7.2. Executive Milestones</a></li>
+</ul>
+</li>
+<li><a href="#org34062e9">8. Budget Estimate</a>
+<ul>
+<li><a href="#org252c151">8.1. Funding Source</a></li>
+<li><a href="#org8819286">8.2. Estimate</a></li>
+</ul>
+</li>
+<li><a href="#org6d35d60">9. High-Level Alternatives Analysis</a></li>
+<li><a href="#orga4c661b">10. Assumptions, Constraints And Risks</a>
+<ul>
+<li><a href="#orgd305867">10.1. Assumptions</a></li>
+<li><a href="#org9a12e28">10.2. Constraints</a></li>
+<li><a href="#org323ab4a">10.3. Risks</a></li>
+</ul>
+</li>
+<li><a href="#orgb7237e9">11. Project Organization</a>
+<ul>
+<li><a href="#org79a7dfb">11.1. Roles And Responsibilities</a></li>
+</ul>
+</li>
+<li><a href="#orgb6bc164">12. Stakeholders (Internal And External)</a></li>
+<li><a href="#orgf48113a">13. Project Charter Approval</a></li>
+<li><a href="#org95febf6">14. Appendix A: References</a></li>
+<li><a href="#orgc88fc31">15. Appendix B: Key Terms</a></li>
+<li><a href="#org975f643">16. Appendix C: Goals</a>
+<ul>
+<li><a href="#org4e24ad0">16.1. CDC Strategic Goals</a>
+<ul>
+<li><a href="#org18fc346">16.1.1. Goal 1 - Healthy People in Every Stage of Life</a></li>
+<li><a href="#orgb563e26">16.1.2. Goal 2 - Healthy People in Healthy Places</a></li>
+<li><a href="#org6cab9c0">16.1.3. Goal 3 - People Prepared for Emerging Health Threats</a></li>
+<li><a href="#orge7d33d8">16.1.4. Goal 4 - Healthy People in a Healthy World</a></li>
+</ul>
+</li>
+<li><a href="#orga104bf3">16.2. Department of Health and Human Services (DHHS) Strategic Goals</a>
+<ul>
+<li><a href="#orgd5ba844">16.2.1. Goal 1 - Reduce the major threats to the health and well-being of Americans</a></li>
+<li><a href="#orgd675ef8">16.2.2. Goal 2 - Enhance the ability of the Nation’s health care system to effectively respond to bioterrorism and other public health challenges</a></li>
+<li><a href="#orgdba0c73">16.2.3. Goal 3 - Increase the percentage of the Nation’s children and adults who have access to health care services, and expand consumer choices</a></li>
+<li><a href="#org78e17da">16.2.4. Goal 4 - Enhance the capacity and productivity of the Nation’s health science research enterprise</a></li>
+<li><a href="#org61ead15">16.2.5. Goal 5 - Improve the quality of health care services</a></li>
+<li><a href="#org139aa79">16.2.6. Goal 6 - Improve the economic and social well-being of individuals, families, and communities, especially those most in need</a></li>
+<li><a href="#orgbb6c074">16.2.7. Goal 7 - Improve the stability and healthy development of our Nation’s children and youth</a></li>
+<li><a href="#org5b0866a">16.2.8. Goal 8 - Achieve excellence in management practices</a></li>
+</ul>
+</li>
+<li><a href="#org073936d">16.3. Department of Health and Human Services (DHHS) IT Goals</a>
+<ul>
+<li><a href="#org2ef7cda">16.3.1. Goal 1 - Provide a secure and trusted IT environment</a></li>
+<li><a href="#org3be837e">16.3.2. Goal 2 - Enhance the quality, availability, and delivery of HHS information and services to citizens, employees, businesses, and governments</a></li>
+<li><a href="#org32c41fc">16.3.3. Goal 3 - Implement an enterprise approach to IT infrastructure and common administrative systems that will foster innovation and collaboration</a></li>
+<li><a href="#org39ce016">16.3.4. Goal 4 - Enable and improve the integration of health and human services information</a></li>
+<li><a href="#org5963265">16.3.5. Goal 5 - Achieve excellence in IT management practices, including a governance process that complements program management, supports e-government initiatives, and ensures effective data privacy and information security controls</a></li>
+</ul>
+</li>
+<li><a href="#org691d9c3">16.4. President’s Management Agenda (PMA) Strategic Goals</a>
+<ul>
+<li><a href="#org99b23d9">16.4.1. Government-wide Initiatives</a></li>
+<li><a href="#orga176d29">16.4.2. Program Initiatives</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge2f64f3" class="outline-2">
+<h2 id="orge2f64f3"><span class="section-number-2">1.</span> Version History</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+[Provide information on how the development and distribution of the Project Charter up to the final point of approval was controlled and tracked. Use the table below to provide the version number, the author implementing the version, the date of the version, the name of the person approving the version, the date that particular version was approved, and a brief description of the reason for creating the revised version.]
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Version #</th>
+<th scope="col" class="org-left">Implemented By</th>
+<th scope="col" class="org-left">Revision Date</th>
+<th scope="col" class="org-left">Approved By</th>
+<th scope="col" class="org-left">Approval Date</th>
+<th scope="col" class="org-left">Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1.0</td>
+<td class="org-left">&lt;Author name&gt;</td>
+<td class="org-left">&lt;mm/dd/yy&gt;</td>
+<td class="org-left">&lt;name&gt;</td>
+<td class="org-left">&lt;mm/dd/yy&gt;</td>
+<td class="org-left">&lt;reason&gt;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org8cad984" class="outline-2">
+<h2 id="org8cad984"><span class="section-number-2">2.</span> Note to the Author</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+[This document is a template of a Project Charter document for a project. The template includes instructions to the author, boilerplate text, and fields that should be replaced with the values specific to the project.
+</p>
+
+<ul class="org-ul">
+<li>Blue italicized text enclosed in square brackets ([text]) provides instructions to the document author, or describes the intent, assumptions and context for content included in this document.</li>
+<li>Blue italicized text enclosed in angle brackets (&lt;text&gt;) indicates a field that should be replaced with information specific to a particular project.</li>
+<li>Text and tables in black are provided as boilerplate examples of wording and formats that may be used or modified as appropriate to a specific project. These are offered only as suggestions to assist in developing project documents; they are not mandatory formats.</li>
+</ul>
+
+<p>
+When using this template for your project document, it is recommended that you follow these steps:
+</p>
+<ol class="org-ol">
+<li>Replace all text enclosed in angle brackets (i.e., &lt;Project Name&gt;) with the correct field values. These angle brackets appear in both the body of the document and in headers and footers.  To customize fields in Microsoft Word (which display a gray background when selected):
+<ol class="org-ol">
+<li>_ Select File&gt;Properties&gt;Summary and fill in the Title field with the Document Name and the Subject field with the Project Name.</li>
+<li>Select File&gt;Properties&gt;Custom and fill in the Last Modified, Status, and Version fields with the appropriate information for this document.</li>
+<li>After you click OK to close the dialog box, update the fields throughout the document with these values by selecting Edit&gt;Select All (or Ctrl-A) and pressing F9.  Or you can update an individual field by clicking on it and pressing F9. This must be done separately for Headers and Footers.</li>
+</ol></li>
+<li>Modify boilerplate text as appropriate to the specific project.</li>
+<li>To add any new sections to the document, ensure that the appropriate header and body text styles are maintained.  Styles used for the Section Headings are Heading 1, Heading 2 and Heading 3.  Style used for boilerplate text is Body Text.</li>
+<li>To update the Table of Contents, right-click and select “Update field” and choose the option- "Update entire table"</li>
+<li>Before submission of the first draft of this document, delete this “Notes to the Author” page and all instructions to the author, which appear throughout the document as blue italicized text enclosed in square brackets.]</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org9fa4877" class="outline-2">
+<h2 id="org9fa4877"><span class="section-number-2">3.</span> Introduction</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgea2d7d1" class="outline-3">
+<h3 id="orgea2d7d1"><span class="section-number-3">3.1.</span> Purpose of Project Charter</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+[Provide the purpose of the project charter.]
+The &lt;Project Name&gt; project charter documents and tracks the necessary information required by decision maker(s) to approve the project for funding. The project charter should include the needs, scope, justification, and resource commitment as well as the project’s sponsor(s) decision to proceed or not to proceed with the project.  It is created during the Initiating Phase of the project.
+The intended audience of the &lt;Project Name&gt; project charter is the project sponsor and senior leadership.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgca70066" class="outline-2">
+<h2 id="orgca70066"><span class="section-number-2">4.</span> Project And Product Overview</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+[Typically, the description should answer who, what, when and where, in a concise manner.  It should also state the estimated project duration (e.g., 18 months) and the estimated project budget (e.g., $1.5M). 
+</p>
+</div>
+</div>
+<div id="outline-container-orgd8f047e" class="outline-2">
+<h2 id="orgd8f047e"><span class="section-number-2">5.</span> Justification</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgf979e68" class="outline-3">
+<h3 id="orgf979e68"><span class="section-number-3">5.1.</span> Business Need</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+[Example: A data collection system is necessary to conduct a national program of surveillance and research to monitor and characterize the x epidemic, including its determinants and the epidemiologic dynamics such as prevalence, incidence, and antiretroviral resistance, and to guide public health action at the federal, state and local levels. Data collection activities will assist with monitoring the incidence and prevalence of x infection, and x-related morbidity and mortality in the population, estimate incidence of x infection, identify changes in trends of x transmission, and identify populations at risk.)]
+</p>
+</div>
+</div>
+<div id="outline-container-org497b49c" class="outline-3">
+<h3 id="org497b49c"><span class="section-number-3">5.2.</span> Public Health And Business Impact</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+[Example: System x collects information about x infection as the jurisdictional, regional, and national levels and will assist in monitoring trends in x transmission rates, incidence rates and x morbidity and mortality trends to help determine public health impact.]
+</p>
+</div>
+</div>
+<div id="outline-container-orgb5d6daa" class="outline-3">
+<h3 id="orgb5d6daa"><span class="section-number-3">5.3.</span> Strategic Alignment</h3>
+<div class="outline-text-3" id="text-5-3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Goal</th>
+<th scope="col" class="org-left">Project Response Rank^<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup></th>
+<th scope="col" class="org-left">Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>NC / Division / Branch Strategic Goals:</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">combo</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>CDC Strategic Goals:</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&lt;Reference Appendix C for goals&gt;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Department of Health and Human Services (DHHS) Strategic Goals:</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&lt;Reference Appendix C for goals&gt;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>DHHS IT Goals:</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&lt;Reference Appendix C for goals&gt;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>President’s Management Agenda (PMA) Strategic Goals:</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&lt;Reference Appendix C for goals&gt;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcd8f542" class="outline-2">
+<h2 id="orgcd8f542"><span class="section-number-2">6.</span> Scope</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org8ad5d56" class="outline-3">
+<h3 id="org8ad5d56"><span class="section-number-3">6.1.</span> Objectives</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+[Example: Improving epidemiologic analyses by provisioning consistent data or to making progress towards a 2010 goal]
+The objectives of the &lt;Project Name&gt; are as follows:
+</p>
+</div>
+<div id="outline-container-orgcbb31d0" class="outline-4">
+<h4 id="orgcbb31d0"><span class="section-number-4">6.1.1.</span> [Insert Objective 1]</h4>
+</div>
+<div id="outline-container-org337a5d8" class="outline-4">
+<h4 id="org337a5d8"><span class="section-number-4">6.1.2.</span> [Insert Objective 2]</h4>
+</div>
+<div id="outline-container-org78c89cf" class="outline-4">
+<h4 id="org78c89cf"><span class="section-number-4">6.1.3.</span> [Add additional bullets as necessary]</h4>
+</div>
+</div>
+<div id="outline-container-orgae9568a" class="outline-3">
+<h3 id="orgae9568a"><span class="section-number-3">6.2.</span> High-Level Requirements</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+The following table presents the requirements that the project’s product, service or result must meet in order for the project objectives to be satisfied.  
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Req. #</th>
+<th scope="col" class="org-left">Requirement Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgbfc5458" class="outline-3">
+<h3 id="orgbfc5458"><span class="section-number-3">6.3.</span> Major Deliverables</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+The following table presents the major deliverables that the project’s product, service or result must meet in order for the project objectives to be satisfied.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Major Deliverable</th>
+<th scope="col" class="org-left">Deliverable Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-orga29432f" class="outline-3">
+<h3 id="orga29432f"><span class="section-number-3">6.4.</span> Boundaries</h3>
+<div class="outline-text-3" id="text-6-4">
+<p>
+[Describe the inclusive and exclusive boundaries of the project.  Specifically address items that are out of scope.]
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org62b516f" class="outline-2">
+<h2 id="org62b516f"><span class="section-number-2">7.</span> Duration</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-org56e46c5" class="outline-3">
+<h3 id="org56e46c5"><span class="section-number-3">7.1.</span> Timeline</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+[An example of a high-level timeline is provided below.]
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb4fcc1b" class="outline-3">
+<h3 id="orgb4fcc1b"><span class="section-number-3">7.2.</span> Executive Milestones</h3>
+<div class="outline-text-3" id="text-7-2">
+<p>
+[Example: For CPIC major/tactical projects, these milestones could be used to complete the Funding Plan/Cost and Schedule section of the OMB Exhibit 300.]
+The table below lists the high-level Executive Milestones of the project and their estimated completion timeframe.  
+Executive Milestones
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Estimated Completion</th>
+<th scope="col" class="org-left">Timeframe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">[Insert milestone information (e.g., Project planned and authorized to proceed)]</td>
+<td class="org-left">[Insert completion timeframe (e.g., Two weeks after project concept is approved)]</td>
+</tr>
+
+<tr>
+<td class="org-left">[Insert milestone information (e.g., Version 1 completed)]</td>
+<td class="org-left">[Insert completion timeframe (e.g., Twenty-five weeks after requirements analysis is completed)]</td>
+</tr>
+
+<tr>
+<td class="org-left">[Add additional rows as necessary]</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="outline-container-org34062e9" class="outline-2">
+<h2 id="org34062e9"><span class="section-number-2">8.</span> Budget Estimate</h2>
+<div class="outline-text-2" id="text-8">
+</div>
+<div id="outline-container-org252c151" class="outline-3">
+<h3 id="org252c151"><span class="section-number-3">8.1.</span> Funding Source</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+[Example: grant, terrorism budget, or operational budget.] 
+</p>
+</div>
+</div>
+<div id="outline-container-org8819286" class="outline-3">
+<h3 id="org8819286"><span class="section-number-3">8.2.</span> Estimate</h3>
+<div class="outline-text-3" id="text-8-2">
+<p>
+This section provides a summary of estimated spending to meet the objectives of the &lt;Project Name&gt; project as described in this project charter. This summary of spending is preliminary, and should reflect costs for the entire investment lifecycle.  It is intended to present probable funding requirements and to assist in obtaining budgeting support.
+[For CPIC major/tactical projects complete and attach the required sections of the OMB Exhibit 300 located at <a href="http://intranet.cdc.gov/cpic/">http://intranet.cdc.gov/cpic/</a>. For all other projects, provide a summary of the project’s expected spending below.]
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Code</th>
+<th scope="col" class="org-left">Item</th>
+<th scope="col" class="org-left">Jan</th>
+<th scope="col" class="org-left">Feb</th>
+<th scope="col" class="org-left">Mar</th>
+<th scope="col" class="org-left">Apr</th>
+<th scope="col" class="org-left">May</th>
+<th scope="col" class="org-left">Jun</th>
+<th scope="col" class="org-left">Jul</th>
+<th scope="col" class="org-left">Ago</th>
+<th scope="col" class="org-left">Set</th>
+<th scope="col" class="org-left">Oct</th>
+<th scope="col" class="org-left">Nov</th>
+<th scope="col" class="org-left">Dec</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><b>Total:</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6d35d60" class="outline-2">
+<h2 id="org6d35d60"><span class="section-number-2">9.</span> High-Level Alternatives Analysis</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+[Example: Alternatives to developing a custom system may have included looking at existing COTS products or reusing an existing system.]
+</p>
+<ol class="org-ol">
+<li>[Provide a statement summarizing the factors considered.]</li>
+<li>[Provide a statement summarizing the factors considered.]</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orga4c661b" class="outline-2">
+<h2 id="orga4c661b"><span class="section-number-2">10.</span> Assumptions, Constraints And Risks</h2>
+<div class="outline-text-2" id="text-10">
+</div>
+<div id="outline-container-orgd305867" class="outline-3">
+<h3 id="orgd305867"><span class="section-number-3">10.1.</span> Assumptions</h3>
+<div class="outline-text-3" id="text-10-1">
+<p>
+[Example: The system is being developed to capture data from public health partners. One assumption is that data is entered electronically into the system.]  
+This section identifies the statements believed to be true and from which a conclusion was drawn to define this project charter. 
+</p>
+<ol class="org-ol">
+<li>[Insert description of the first assumption.]</li>
+<li>[Insert description of the second assumption.]</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org9a12e28" class="outline-3">
+<h3 id="org9a12e28"><span class="section-number-3">10.2.</span> Constraints</h3>
+<div class="outline-text-3" id="text-10-2">
+<p>
+[Example: There might be time constraints on developing a system that is used to track data of highly infectious diseases like SARS.]
+This section identifies any limitation that must be taken into consideration prior to the initiation of the project.
+</p>
+<ol class="org-ol">
+<li>[Insert description of the first constraint.]</li>
+<li>[Insert description of the second constraint.]</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org323ab4a" class="outline-3">
+<h3 id="org323ab4a"><span class="section-number-3">10.3.</span> Risks</h3>
+<div class="outline-text-3" id="text-10-3">
+<p>
+[Example: The risk of accessibility or unavailability of public health partners for obtaining requirements to develop a data collection system may delay project deliverables. A possible mitigation strategy might be to schedule requirement sessions with the partners as early as possible. List the risks that the project sponsor should be aware of before making a decision on funding the project, including risks of not funding the project.]
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Risk</th>
+<th scope="col" class="org-left">Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb7237e9" class="outline-2">
+<h2 id="orgb7237e9"><span class="section-number-2">11.</span> Project Organization</h2>
+<div class="outline-text-2" id="text-11">
+</div>
+<div id="outline-container-org79a7dfb" class="outline-3">
+<h3 id="org79a7dfb"><span class="section-number-3">11.1.</span> Roles And Responsibilities</h3>
+<div class="outline-text-3" id="text-11-1">
+<p>
+[Depending on your project organization, you may modify the roles and responsibilities listed in the table below.]
+This section describes the key roles supporting the project. 
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Name &amp; Organization</th>
+<th scope="col" class="org-left">Project Role</th>
+<th scope="col" class="org-left">Project Responsibilities</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">&lt;Name&gt; &lt;Org&gt;</td>
+<td class="org-left">Project Sponsor</td>
+<td class="org-left">Person responsible for acting as the project’s champion and providing direction and support to the team.  In the context of this document, this person approves the request for funding, approves the project scope represented in this document, and sets the priority of the project relative to other projects in his/her area of responsibility.</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&lt;Name&gt;&lt;Org&gt;</td>
+<td class="org-left">Government Monitor</td>
+<td class="org-left">Government employee who provides the interface between the project team and the project sponsor.  Additionally, they will serve as the single focal point of contact for the Project Manager to manage CDC’s day-to-day interests. This person must have adequate business and project knowledge in order to make informed decisions. In the case where a contract is involved, the role of a Government Monitor will often be fulfilled by a Contracting Officer and a Project Officer.</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&lt;Name&gt;&lt;Org&gt;</td>
+<td class="org-left">Contracting Officer</td>
+<td class="org-left">Person who has the authority to enter into, terminate, or change a contractual agreement on behalf of the Government.  This person bears the legal responsibility for the contract.</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&lt;Name&gt;&lt;Org&gt;</td>
+<td class="org-left">Project Officer</td>
+<td class="org-left">A program representative responsible for coordinating with acquisition officials on projects for which contract support is contemplated. This representative is responsible for technical monitoring and evaluation of the contractor's performance after award.</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&lt;Name&gt;&lt;Org&gt;</td>
+<td class="org-left">Project Manager (This could include a Contractor Project Manager or an FTE Project Manager)	Person who performs the day-to-day management of the project and has specific accountability for managing the project within the approved constraints of scope, quality, time and cost, to deliver the specified requirements, deliverables and customer satisfaction.</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&lt;Name&gt;&lt;Org&gt;</td>
+<td class="org-left">Business Steward</td>
+<td class="org-left">Person in management, often the Branch Chief or Division Director, who is responsible for the project in its entirety.</td>
+<td class="org-left">Business Steward</td>
+<td class="org-left">Person in management, often the Branch Chief or Division Director, who is responsible for the project in its entirety.</td>
+<td class="org-left">&lt;Name&gt;&lt;Org&gt;</td>
+<td class="org-left">Technical Steward</td>
+<td class="org-left">Person who is responsible for the technical day-to-day aspects of the system including the details of system development.  The Technical Steward is responsible for providing technical direction to the project.</td>
+</tr>
+
+<tr>
+<td class="org-left">&lt;Name&gt;&lt;Org&gt;</td>
+<td class="org-left">Security Steward</td>
+<td class="org-left">Person who is responsible for playing the lead role for maintaining the project’s information security.</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb6bc164" class="outline-2">
+<h2 id="orgb6bc164"><span class="section-number-2">12.</span> Stakeholders (Internal And External)</h2>
+<div class="outline-text-2" id="text-12">
+<p>
+[Examples of stakeholders include an epidemiologist performing a behavioral research project and people in the field collecting data using a software application (the proposed project) to collect the data required for a behavioral research project.]
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf48113a" class="outline-2">
+<h2 id="orgf48113a"><span class="section-number-2">13.</span> Project Charter Approval</h2>
+<div class="outline-text-2" id="text-13">
+<p>
+The undersigned acknowledge they have reviewed the project charter and authorize and fund the &lt;Project Name&gt; project.  Changes to this project charter will be coordinated with and approved by the undersigned or their designated representatives.
+[List the individuals whose signatures are desired.  Examples of such individuals are Business Steward, Project Manager or Project Sponsor.  Add additional lines for signature as necessary. Although signatures are desired, they are not always required to move forward with the practices outlined within this document.]
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-left">Role</th>
+<th scope="col" class="org-left">Print Name</th>
+<th scope="col" class="org-left">Signature</th>
+<th scope="col" class="org-left">Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-org95febf6" class="outline-2">
+<h2 id="org95febf6"><span class="section-number-2">14.</span> Appendix A: References</h2>
+<div class="outline-text-2" id="text-14">
+<p>
+[Insert the name, version number, description, and physical location of any documents referenced in this document.  Add rows to the table as necessary.] 
+The following table summarizes the documents referenced in this document.
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Document Name</th>
+<th scope="col" class="org-left">Version</th>
+<th scope="col" class="org-left">Description</th>
+<th scope="col" class="org-left">Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">&lt;Document Name</td>
+<td class="org-left">Version Number&gt;</td>
+<td class="org-left">[Provide description of the document]</td>
+<td class="org-left">&lt;URL or Network path where document is located&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-orgc88fc31" class="outline-2">
+<h2 id="orgc88fc31"><span class="section-number-2">15.</span> Appendix B: Key Terms</h2>
+<div class="outline-text-2" id="text-15">
+<p>
+[Insert terms and definitions used in this document.  Add rows to the table as necessary. Follow the link below to for definitions of project management terms and acronyms used in this and other documents.
+<a href="http://www2.cdc.gov/cdcup/library/other/help.htm">http://www2.cdc.gov/cdcup/library/other/help.htm</a>
+The following table provides definitions for terms relevant to this document.
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Term</th>
+<th scope="col" class="org-left">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">[Insert Term]</td>
+<td class="org-left">[Provide definition of the term used in this document.]</td>
+</tr>
+
+<tr>
+<td class="org-left">[Insert Term]</td>
+<td class="org-left">[Provide definition of the term used in this document.]</td>
+</tr>
+
+<tr>
+<td class="org-left">[Insert Term]</td>
+<td class="org-left">[Provide definition of the term used in this document.]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-org975f643" class="outline-2">
+<h2 id="org975f643"><span class="section-number-2">16.</span> Appendix C: Goals</h2>
+<div class="outline-text-2" id="text-16">
+</div>
+<div id="outline-container-org4e24ad0" class="outline-3">
+<h3 id="org4e24ad0"><span class="section-number-3">16.1.</span> CDC Strategic Goals</h3>
+<div class="outline-text-3" id="text-16-1">
+<p>
+URL: <a href="http://www.cdc.gov/about/goals/">http://www.cdc.gov/about/goals/</a>
+</p>
+</div>
+<div id="outline-container-org18fc346" class="outline-4">
+<h4 id="org18fc346"><span class="section-number-4">16.1.1.</span> Goal 1 - Healthy People in Every Stage of Life</h4>
+</div>
+<div id="outline-container-orgb563e26" class="outline-4">
+<h4 id="orgb563e26"><span class="section-number-4">16.1.2.</span> Goal 2 - Healthy People in Healthy Places</h4>
+</div>
+<div id="outline-container-org6cab9c0" class="outline-4">
+<h4 id="org6cab9c0"><span class="section-number-4">16.1.3.</span> Goal 3 - People Prepared for Emerging Health Threats</h4>
+</div>
+<div id="outline-container-orge7d33d8" class="outline-4">
+<h4 id="orge7d33d8"><span class="section-number-4">16.1.4.</span> Goal 4 - Healthy People in a Healthy World</h4>
+</div>
+</div>
+
+<div id="outline-container-orga104bf3" class="outline-3">
+<h3 id="orga104bf3"><span class="section-number-3">16.2.</span> Department of Health and Human Services (DHHS) Strategic Goals</h3>
+<div class="outline-text-3" id="text-16-2">
+<p>
+URL: <a href="http://aspe.hhs.gov/hhsplan/2004/goals.shtml">http://aspe.hhs.gov/hhsplan/2004/goals.shtml</a> (Search for “HHS IT Strategic Plan”)
+</p>
+</div>
+<div id="outline-container-orgd5ba844" class="outline-4">
+<h4 id="orgd5ba844"><span class="section-number-4">16.2.1.</span> Goal 1 - Reduce the major threats to the health and well-being of Americans</h4>
+</div>
+<div id="outline-container-orgd675ef8" class="outline-4">
+<h4 id="orgd675ef8"><span class="section-number-4">16.2.2.</span> Goal 2 - Enhance the ability of the Nation’s health care system to effectively respond to bioterrorism and other public health challenges</h4>
+</div>
+<div id="outline-container-orgdba0c73" class="outline-4">
+<h4 id="orgdba0c73"><span class="section-number-4">16.2.3.</span> Goal 3 - Increase the percentage of the Nation’s children and adults who have access to health care services, and expand consumer choices</h4>
+</div>
+<div id="outline-container-org78e17da" class="outline-4">
+<h4 id="org78e17da"><span class="section-number-4">16.2.4.</span> Goal 4 - Enhance the capacity and productivity of the Nation’s health science research enterprise</h4>
+</div>
+<div id="outline-container-org61ead15" class="outline-4">
+<h4 id="org61ead15"><span class="section-number-4">16.2.5.</span> Goal 5 - Improve the quality of health care services</h4>
+</div>
+<div id="outline-container-org139aa79" class="outline-4">
+<h4 id="org139aa79"><span class="section-number-4">16.2.6.</span> Goal 6 - Improve the economic and social well-being of individuals, families, and communities, especially those most in need</h4>
+</div>
+<div id="outline-container-orgbb6c074" class="outline-4">
+<h4 id="orgbb6c074"><span class="section-number-4">16.2.7.</span> Goal 7 - Improve the stability and healthy development of our Nation’s children and youth</h4>
+</div>
+<div id="outline-container-org5b0866a" class="outline-4">
+<h4 id="org5b0866a"><span class="section-number-4">16.2.8.</span> Goal 8 - Achieve excellence in management practices</h4>
+</div>
+</div>
+
+<div id="outline-container-org073936d" class="outline-3">
+<h3 id="org073936d"><span class="section-number-3">16.3.</span> Department of Health and Human Services (DHHS) IT Goals</h3>
+<div class="outline-text-3" id="text-16-3">
+<p>
+URL: <a href="http://aspe.hhs.gov/hhsplan/2004/goals.shtml">http://aspe.hhs.gov/hhsplan/2004/goals.shtml</a>
+</p>
+</div>
+<div id="outline-container-org2ef7cda" class="outline-4">
+<h4 id="org2ef7cda"><span class="section-number-4">16.3.1.</span> Goal 1 - Provide a secure and trusted IT environment</h4>
+</div>
+<div id="outline-container-org3be837e" class="outline-4">
+<h4 id="org3be837e"><span class="section-number-4">16.3.2.</span> Goal 2 - Enhance the quality, availability, and delivery of HHS information and services to citizens, employees, businesses, and governments</h4>
+</div>
+<div id="outline-container-org32c41fc" class="outline-4">
+<h4 id="org32c41fc"><span class="section-number-4">16.3.3.</span> Goal 3 - Implement an enterprise approach to IT infrastructure and common administrative systems that will foster innovation and collaboration</h4>
+</div>
+<div id="outline-container-org39ce016" class="outline-4">
+<h4 id="org39ce016"><span class="section-number-4">16.3.4.</span> Goal 4 - Enable and improve the integration of health and human services information</h4>
+</div>
+<div id="outline-container-org5963265" class="outline-4">
+<h4 id="org5963265"><span class="section-number-4">16.3.5.</span> Goal 5 - Achieve excellence in IT management practices, including a governance process that complements program management, supports e-government initiatives, and ensures effective data privacy and information security controls</h4>
+</div>
+</div>
+
+<div id="outline-container-org691d9c3" class="outline-3">
+<h3 id="org691d9c3"><span class="section-number-3">16.4.</span> President’s Management Agenda (PMA) Strategic Goals</h3>
+<div class="outline-text-3" id="text-16-4">
+<p>
+URL: <a href="http://www.whitehouse.gov/omb/budintegration/pma_index.html">http://www.whitehouse.gov/omb/budintegration/pma_index.html</a>
+</p>
+</div>
+<div id="outline-container-org99b23d9" class="outline-4">
+<h4 id="org99b23d9"><span class="section-number-4">16.4.1.</span> Government-wide Initiatives</h4>
+<div class="outline-text-4" id="text-16-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="org9a70f9d"></a>Goal 1 - Strategic Management of Human Capital<br /></li>
+<li><a id="org9c34569"></a>Goal 2 - Competitive Sourcing<br /></li>
+<li><a id="org220ddcd"></a>Goal 3 - Improved Financial Performance<br /></li>
+<li><a id="org1520697"></a>Goal 4 - Expanded Electronic Government<br /></li>
+<li><a id="org7ef5a02"></a>Goal 5 - Budget and Performance Integration<br /></li>
+</ol>
+</div>
+<div id="outline-container-orga176d29" class="outline-4">
+<h4 id="orga176d29"><span class="section-number-4">16.4.2.</span> Program Initiatives</h4>
+<div class="outline-text-4" id="text-16-4-2">
+</div>
+<ol class="org-ol">
+<li><a id="org9973887"></a>Goal 1 - Faith-Based and Community Initiative<br /></li>
+<li><a id="org7f15a97"></a>Goal 2 - Privatization of Military Housing<br /></li>
+<li><a id="orgeb8b10b"></a>Goal 3 - Better Research and Development Investment Criteria<br /></li>
+<li><a id="orgfa67257"></a>Goal 4 - Elimination of Fraud and Error in Student Aid Programs and Deficiencies in Financial Management<br /></li>
+<li><a id="orga597922"></a>Goal 5 - Housing and Urban Development Management and Performance<br /></li>
+<li><a id="org249788c"></a>Goal 6 - Broadened Health Insurance Coverage through State Initiatives<br /></li>
+<li><a id="org8d34662"></a>Goal 7 - A “Right-Sized” Overseas Presence<br /></li>
+<li><a id="orgafe374b"></a>Goal 8 - Reform of Food Aid Programs<br /></li>
+<li><a id="orgb0b3a52"></a>Goal 9 - Coordination of Veterans Affairs and Defense Programs and Systems<br /></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Scale: H – High, M- Medium, L – Low, N/A – Not Applicable
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="date">Date: \today</p>
+<p class="author">Author: Ricardo Antunes</p>
+<p class="date">Created: 2022-03-21 Mon 21:51</p>
+</div>
+</body>
+</html>

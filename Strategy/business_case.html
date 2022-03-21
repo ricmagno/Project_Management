@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-03-21 Mon 21:50 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Business Case</title>
+<meta name="author" content="Ricardo Antunes" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Business Case
+<br />
+<span class="subtitle">Project Name</span>
+</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org9103abf">1. Executive Summary</a>
+<ul>
+<li><a href="#orgab685e0">1.1. Issue</a></li>
+<li><a href="#org0be10f3">1.2. Anticipated Outcomes</a></li>
+<li><a href="#org37e1fb0">1.3. Recommendation</a></li>
+<li><a href="#org4240ab1">1.4. Justification</a></li>
+<li><a href="#org311ae07">1.5. Business Case Analysis Team</a></li>
+</ul>
+</li>
+<li><a href="#orgcf05a10">2. Problem Definition</a>
+<ul>
+<li><a href="#org32b9b8f">2.1. Problem Statement</a></li>
+<li><a href="#org99bf7a7">2.2. Organizational Impact</a></li>
+<li><a href="#org02d76b8">2.3. Technology Migration</a></li>
+</ul>
+</li>
+<li><a href="#org7c8ef7e">3. Project Overview</a>
+<ul>
+<li><a href="#org7e1f38e">3.1. Project Description</a></li>
+<li><a href="#orga447152">3.2. Goals and Objectives</a></li>
+<li><a href="#orgb34c354">3.3. Project Performance</a></li>
+<li><a href="#org2b2d47b">3.4. Project Assumptions</a></li>
+</ul>
+</li>
+<li><a href="#orga4b141a">4. Strategic Alignment</a></li>
+<li><a href="#org2bf70bf">5. Cost Benefit Analysis</a></li>
+<li><a href="#orgc2652df">6. Alternative Analysis</a></li>
+<li><a href="#org9e35d64">7. Approvals</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org9103abf" class="outline-2">
+<h2 id="org9103abf"><span class="section-number-2">1.</span> Executive Summary</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This Business Case Template provides you with a good starting point for which to develop your project/organization specific Business Case. You can download the MS Word version of this template by clicking on the Word icon above.
+</p>
+
+<p>
+This section should provide general information on the issues surrounding the business problem and the proposed project or initiative created to address it. Usually, this section is completed last after all other sections of the business case have been written. This is because the executive summary is exactly that, a summary of the detail that is provided in subsequent sections of the document.
+</p>
+
+<p>
+This business case outlines how the Web Platform (WP) Project will address current business concerns, the benefits of the project, and recommendations and justification of the project. The business case also discusses detailed project goals, performance measures, assumptions, constraints, and alternative options.
+</p>
+</div>
+
+<div id="outline-container-orgab685e0" class="outline-3">
+<h3 id="orgab685e0"><span class="section-number-3">1.1.</span> Issue</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+This section of the business case should briefly describe the business problem that the proposed project will address. This section should not describe how the problem will be addressed, only what the problem is.
+</p>
+
+<p>
+Because of an expanding client base, Smith Consulting has moved to a de-centralized business model over the last 2 years. As we continue to support more clients in more locations, the administration of our workforce has become more difficult. Until now, many of our internal requirements such as reporting, payroll activities, and resource management have been done via legacy mainframe systems. As our workforce expands in numbers and area, these legacy mainframe systems have become inadequate to effectively manage these administrative activities. This inadequacy is manifested in higher costs and increased employee turnover which we have seen over the last 12 months. In order to more effectively manage our administration, reduce costs, and improve employee turnover, Smith Consulting must move to a web-based application as outlined in this business case for the WP Project. By doing so, employees will assume a greater role in managing their administrative issues, have access to timesheets securely online, and the company can manage its administration from one central and common platform.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0be10f3" class="outline-3">
+<h3 id="org0be10f3"><span class="section-number-3">1.2.</span> Anticipated Outcomes</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+This section should describe the anticipated outcome if the proposed project or initiative is implemented. It should include how the project will benefit the business and describe what the end state of the project should be.
+</p>
+
+<p>
+Moving to a centralized web-based administrative platform will enable Smith Consulting to manage its employee payroll systems and administrative functions in a seamless and consolidated manner. This technology migration will reduce overhead costs associated with the large workforce currently required to manage these tasks. De-centralized employees will have more autonomy to manage their payroll elections, training, reporting, and various other administrative tasks. The company will also benefit from more timely and accurate financial reporting as a result of our regional managers’ ability to enter and continuously update their financial metrics. This real time access reduces errors, improves cycle time, and is readily available to any authorized user.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org37e1fb0" class="outline-3">
+<h3 id="org37e1fb0"><span class="section-number-3">1.3.</span> Recommendation</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+This section of our business case template summarizes the approach for how the project will address the business problem. This section should also describe how desirable results will be achieved by moving forward with the project.
+</p>
+
+<p>
+Various options and alternatives were analyzed to determine the best way to leverage technology to improve the business processes and reduce the overhead costs within Smith Consulting. The approach described herein allows us to meet our corporate objectives of continuously improving efficiency, reducing costs, and capitalizing on technology. The recommended WP Project will methodically migrate the data and functions of our current mainframe system to our new web-based platform in order to preserve data integrity and allow adequate time to train all employees and managers on their responsibilities and respective administrative functions. The web-based platform is compatible with all other current IT systems and will improve the efficiency and accuracy of reporting throughout the company. Some of the ways that this technology will achieve its desired results are:
+</p>
+
+<ul class="org-ul">
+<li>Employees will be able to enter and edit their timesheet data at any time from any location instead of phoning their data to their regional manager for entry into the mainframe system</li>
+<li>Timesheet and payroll data will be immediately accessible for quality control and reporting purposes which will reduce the need for staff in non-billable positions to gather, analyze and compile data</li>
+<li>Employees will have the ability to register for training which reduces the burden on managers and training staff</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4240ab1" class="outline-3">
+<h3 id="org4240ab1"><span class="section-number-3">1.4.</span> Justification</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+This section justifies why the recommended project should be implemented and why it was selected over other alternatives. Where applicable, quantitative support should be provided and the impact of not implementing the project should also be stated.
+</p>
+
+<p>
+The migration of payroll and other administrative functions from the legacy mainframe system to the web-based platform will result in greater efficiency with regards to company resources and business processes. The WP Project is also aligned with corporate strategy and objectives since it uses technology to improve the way we do business. While other alternatives and the status quo were analyzed, the WP Project was selected for proposal in this business case because it provides the best opportunity to realize benefits in an expedited manner while also allowing for the greatest improvement in efficiency and cost reduction. Other alternatives assumed greater risk, provided less benefits, were too difficult to define, or were not suitably aligned with current corporate strategy and/or objectives.
+</p>
+
+<p>
+Initial estimates for the WP Project are:
+</p>
+
+<ul class="org-ul">
+<li>15% reduction in overhead costs in the first 12 months</li>
+<li>10% decrease in employee turnover in the first 12 months</li>
+<li>50% immediate decrease in time to generate weekly and monthly financial reports</li>
+<li>25% immediate decrease in the amount of time it takes to resolve payroll issues</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org311ae07" class="outline-3">
+<h3 id="org311ae07"><span class="section-number-3">1.5.</span> Business Case Analysis Team</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+This section of the business case template describes the roles of the team members who developed the business case. It is imperative that participants and roles are clearly defined for the business case as well as throughout the life of the project.
+</p>
+
+<p>
+The following individuals comprise the business case analysis team. They are responsible for the analysis and creation of the WP Project business case.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Role</th>
+<th scope="col" class="org-left">Description</th>
+<th scope="col" class="org-left">Name/Title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Executive Sponsor</td>
+<td class="org-left">Provide executive support for the project</td>
+<td class="org-left">John Doe, VP Operations</td>
+</tr>
+
+<tr>
+<td class="org-left">Technology Support</td>
+<td class="org-left">Provides all technology support for the project</td>
+<td class="org-left">Jane Smith, VP Information Technology</td>
+</tr>
+
+<tr>
+<td class="org-left">Process Improvement</td>
+<td class="org-left">Advises team on process improvement techniques</td>
+<td class="org-left">Jim Jones, Process Team Lead</td>
+</tr>
+
+<tr>
+<td class="org-left">Project Manager</td>
+<td class="org-left">Manages the business case and project team</td>
+<td class="org-left">Steve Smith, Project Manager</td>
+</tr>
+
+<tr>
+<td class="org-left">Software Support</td>
+<td class="org-left">Provides all software support for the project</td>
+<td class="org-left">Amy White, Software Group Lead</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcf05a10" class="outline-2">
+<h2 id="orgcf05a10"><span class="section-number-2">2.</span> Problem Definition</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org32b9b8f" class="outline-3">
+<h3 id="org32b9b8f"><span class="section-number-3">2.1.</span> Problem Statement</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+This section describes the business problem that this project was created to address. The problem may be process, technology, or product/service oriented. This section should not include any discussion related to the solution.
+</p>
+
+<p>
+Since its inception, Smith Consulting has relied upon a mainframe system to manage payroll and other administrative employee functions. As the number of employees grows, so does the burden placed upon headquarters to effectively manage the company’s administration at acceptable levels. In the last two years Smith Consulting has hired 5 employees into overhead positions to help manage and run the day to day administration operations. These positions provide little or no return on investment as they are not billable positions and only maintain the status quo; they do nothing to improve the management of the company’s administration. Additionally, employees must currently call their regional managers to enter their work hours and raise any concerns regarding payroll and administrative tasks. This places a large burden on managers who much balance these requirements with their day to day billable tasks.
+</p>
+
+<p>
+Reporting is another problem area associated with the legacy mainframe system. All weekly and monthly financial reports must be generated manually which allows for a high probability of error and require significant amounts of time. These manual tasks further add to the burden and expense of the company.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org99bf7a7" class="outline-3">
+<h3 id="org99bf7a7"><span class="section-number-3">2.2.</span> Organizational Impact</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+This section of our template describes how the proposed project will modify or affect the organizational processes, tools, hardware, and/or software. It should also explain any new roles which would be created or how existing roles may change as a result of the project.
+</p>
+
+<p>
+The WP Project will impact Smith Consulting in several ways. The following provides a high-level explanation of how the organization, tools, processes, and roles and responsibilities will be affected as a result of the WP Project implementation:
+</p>
+
+<p>
+Tools: the existing legacy administration platform will be phased out completely as the WP Project is stood up and becomes operational. This will require training employees on the WP tools and their use in support of other organizational tools.
+</p>
+
+<p>
+Processes: with the WP Project comes more efficient and streamlined administrative and payroll processes. This improved efficiency will lessen the burden on managers and provide autonomy to employees in managing their administrative and payroll tasks and actions.
+</p>
+
+<p>
+Roles and Responsibilities: in addition to the WP Project allowing greater autonomy to employees and less burden on managers, the manpower required to appropriately staff human resources and payroll departments will be reduced. While we greatly value our employees, the reduction of non-billable overhead positions will directly reflect in our bottom line and provide an immediate return on our investment. The new platform will be managed by the IT group and we do not anticipate any changes to IT staffing requirements.
+</p>
+
+<p>
+Hardware/Software: in addition to the software and licensing for the project, Smith Consulting will be required to purchase additional servers to accommodate the platform and its anticipated growth for the next 10 years.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org02d76b8" class="outline-3">
+<h3 id="org02d76b8"><span class="section-number-3">2.3.</span> Technology Migration</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+This section of the Business Case Template provides a high-level overview of how the new technology will be implemented and how data from the legacy technology will be migrated. This section should also explain any outstanding technical requirements and obstacles which need to be addressed.
+</p>
+
+<p>
+In order to effectively migrate existing data from our legacy platform to the new Web-based platform, a phased approach has been developed which will result in minimal/no disruption to day to day operations, administration, and payroll activities. The following is a high-level overview of the phased approach:
+</p>
+
+<ul class="org-ul">
+<li>Phase I: Hardware/Software will be purchased and the WP system will be created in the web-based environment and tested by the IT development group.</li>
+<li>Phase II: IT group will stand up a temporary legacy platform in the technology lab to be used for day to day operations for payroll and administration activities. This will be used as a backup system and also to archive all data from the company mainframe.</li>
+<li>Phase III: The web-based platform will be populated with all current payroll and administrative data. This must be done in conjunction with the end of a pay cycle.</li>
+<li>Phase IV: All employees will receive training on the new web-based platform.</li>
+<li>Phase V: The web-based platform will go live and the legacy mainframe system will be archived and stood down.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7c8ef7e" class="outline-2">
+<h2 id="org7c8ef7e"><span class="section-number-2">3.</span> Project Overview</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+This section describes high-level information about the project to include a description, goals and objectives, performance criteria, assumptions, constraints, and milestones. This section of the Business Case consolidates all project-specific information into one chapter and allows for an easy understanding of the project since the baseline business problem, impacts, and recommendations have already been established.
+</p>
+
+<p>
+The WP Project overview provides detail for how this project will address Smith Consulting’s business problem. The overview consists of a project description, goals and objectives for the WP Project, project performance criteria, project assumptions, constraints, and major milestones. As the project is approved and moves forward, each of these components will be expanded to include a greater level of detail in working toward the project plan.
+</p>
+</div>
+
+<div id="outline-container-org7e1f38e" class="outline-3">
+<h3 id="org7e1f38e"><span class="section-number-3">3.1.</span> Project Description</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+This section describes the approach the project will use to address the business problem(s). This includes what the project will consist of, a general description of how it will be executed, and the purpose of it.
+</p>
+
+<p>
+The WP Project will review and analyze several potential products to replace Smith Consulting’s legacy payroll and administration mainframe system with a web-based platform. This will be done by determining and selecting a product which adequately replaces our existing system and still allows for growth for the next 10 years. Once selected, the project will replace our existing system in a phased implementation approach and be completed once the new system is operational and the legacy system is archived and no longer in use.
+</p>
+
+<p>
+This project will result in greater efficiency of day to day payroll and administrative operations and reporting, significantly lower overhead costs, and reduced turnover as a result of providing employees with greater autonomy and flexibility. Additionally, managers will once again be focused on billable tasks instead of utilizing a significant portion of their time on non-billable administrative tasks.
+</p>
+
+<p>
+Smith Consulting will issue a Request for Information in order to determine which products are immediately available to meet our business needs. Once the product is acquired, all implementation and data population will be conducted with internal resources.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga447152" class="outline-3">
+<h3 id="orga447152"><span class="section-number-3">3.2.</span> Goals and Objectives</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+This part of the template lists the business goals and objectives which are supported by the project and how the project will address them.
+</p>
+
+<p>
+The WP Project directly supports several of the corporate goals and objectives established by Smith Consulting. The following table lists the business goals and objectives that the WP Project supports and how it supports them:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Business Goal/Objective</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Timely and accurate reporting</td>
+<td class="org-left">Web based tool will allow real-time and accurate reporting of all payroll and administrative metrics</td>
+</tr>
+
+<tr>
+<td class="org-left">Improve staff efficiency</td>
+<td class="org-left">Fewer HR and payroll staff required for managing these activities will improve efficiency</td>
+</tr>
+
+<tr>
+<td class="org-left">Reduce employee turnover</td>
+<td class="org-left">Greater autonomy and flexibility will address employee concerns and allow managers to focus on billable tasks</td>
+</tr>
+
+<tr>
+<td class="org-left">Reduce overhead costs</td>
+<td class="org-left">Fewer staff required will reduce the company’s overhead</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgb34c354" class="outline-3">
+<h3 id="orgb34c354"><span class="section-number-3">3.3.</span> Project Performance</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+This section describes the measures that will be used to gauge the project’s performance and outcomes as they relate to key resources, processes, or services.
+</p>
+
+<p>
+The following table lists the key resources, processes, or services and their anticipated business outcomes in measuring the performance of the project. These performance measures will be quantified and further defined in the detailed project plan.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">Resource/Process/Service</th>
+<th scope="col" class="org-left">Performance Measure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Reporting</td>
+<td class="org-left">The web-based system will reduce reporting discrepancies (duplicates and gaps) and require reconciliation every 6 months instead of monthly.</td>
+</tr>
+
+<tr>
+<td class="org-left">Timesheet/Admin data entry</td>
+<td class="org-left">Eliminate managers’ non-billable work by allowing employees to enter their data directly.</td>
+</tr>
+
+<tr>
+<td class="org-left">Software and System Maintenance</td>
+<td class="org-left">Decrease in cost and staff requirements as system maintenance will be reduced from once every month to once every 6 months with the new system.</td>
+</tr>
+
+<tr>
+<td class="org-left">Staff Resources</td>
+<td class="org-left">Elimination of 5 staff positions in HR and payroll which are no longer required as several functions will now be automated.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org2b2d47b" class="outline-3">
+<h3 id="org2b2d47b"><span class="section-number-3">3.4.</span> Project Assumptions</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+This section lists the preliminary assumptions for the proposed project. As the project is selected and moves into detailed project planning, the list of assumptions will most likely grow as the project plan is developed. However, for the business case there should be at least a preliminary list from which to build.
+</p>
+
+<p>
+The following assumptions apply to the WP Project. As project planning begins and more assumptions are identified, they will be added accordingly.
+</p>
+
+<p>
+All staff and employees will be trained accordingly in their respective data entry, timesheet, and reporting tasks on the new web-based system
+Funding is available for training
+Funding is available for purchasing hardware/software for web-based system
+All department heads will provide necessary support for successful project completion
+Project has executive-level support and backing
+4.5 Project Constraints
+This section of the business case template lists the preliminary constraints for the proposed project. As the project is selected and moves into detailed project planning, the list of constraints will most likely grow as the project plan is developed. However, for the business case there should be at least a preliminary list from which to build.
+</p>
+
+<p>
+The following constraints apply to the WP Project. As project planning begins and more constraints are identified, they will be added accordingly.
+</p>
+
+<p>
+There are limited IT resources available to support the WP Project and other, ongoing, IT initiatives.
+There are a limited number of commercial off the shelf (COTS) products to support both payroll and administrative activities.
+As implementation will be done internally and not by the product developers or vendors, there will be limited support from the hardware/software providers.
+4.6 Major Project Milestones
+This section of our template lists the major project milestones and their target completion dates. Since this is the business case, these milestones and target dates are general and in no way final. It is important to note that as the project planning moves forward, a base-lined schedule including all milestones will be completed.
+</p>
+
+<p>
+The following are the major project milestones identified at this time. As the project planning moves forward and the schedule is developed, the milestones and their target completion dates will be modified, adjusted, and finalized as necessary to establish the baseline schedule.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Milestones/Deliverables</th>
+<th scope="col" class="org-left">Target Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Project Charter</td>
+<td class="org-left">01/01/20xx</td>
+</tr>
+
+<tr>
+<td class="org-left">Project Plan Review and Completion</td>
+<td class="org-left">03/01/20xx</td>
+</tr>
+
+<tr>
+<td class="org-left">Project Kickoff</td>
+<td class="org-left">03/10/20xx</td>
+</tr>
+
+<tr>
+<td class="org-left">Phase I Complete</td>
+<td class="org-left">04/15/20xx</td>
+</tr>
+
+<tr>
+<td class="org-left">Phase II Complete</td>
+<td class="org-left">06/15/20xx</td>
+</tr>
+
+<tr>
+<td class="org-left">Phase III Complete</td>
+<td class="org-left">08/15/20xx</td>
+</tr>
+
+<tr>
+<td class="org-left">Phase IV Complete</td>
+<td class="org-left">10/15/20xx</td>
+</tr>
+
+<tr>
+<td class="org-left">Phase V Complete</td>
+<td class="org-left">12/15/20xx</td>
+</tr>
+
+<tr>
+<td class="org-left">Closeout/Project Completion</td>
+<td class="org-left">12/31/20xx</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga4b141a" class="outline-2">
+<h2 id="orga4b141a"><span class="section-number-2">4.</span> Strategic Alignment</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+All projects should support the organization’s strategy and strategic plans in order to add value and maintain executive and organizational support. This section of the business case template provides an overview of the organizational strategic plans that are related to the project. This includes the strategic plan, what the plan calls for, and how the project supports the strategic plan.
+</p>
+
+<p>
+The WP Project is in direct support of several of Smith Consulting’s Strategic Plans. By directly supporting these strategic plans, this project will improve our business and help move the company forward to the next level of maturity.
+</p>
+
+<ul class="org-ul">
+<li>Plan,	Goals/Objectives, and Relationship to Project:
+<ul class="org-ul">
+<li>20xx Smith Consulting Strategic Plan for Information Management
+<ul class="org-ul">
+<li>Improve record keeping and information management</li>
+<li>This project will allow for real-time information and data entry, increased information accuracy, and a consolidated repository for all payroll and administrative data</li>
+</ul></li>
+<li>20xx Smith Consulting Strategic Plan for Information Management
+<ul class="org-ul">
+<li>Utilize new technology to support company and department missions more effectively</li>
+<li>New technology will allow many payroll and administrative functions to be automated reducing the levels of staff required to manage these systems</li>
+</ul></li>
+<li>20xx Smith Consulting Strategic Plan for Human Capital
+<ul class="org-ul">
+<li>Engage the workforce and improve employee retention</li>
+<li>This project allows the employee to take an active role in managing his/her payroll and administrative elections</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2bf70bf" class="outline-2">
+<h2 id="org2bf70bf"><span class="section-number-2">5.</span> Cost Benefit Analysis</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Many consider this one of the most important parts of a business case as it is often the costs or savings a project yields which win final approval to go forward. It is important to quantify the financial benefits of the project as much as possible in the business case. This is usually done in the form of a cost benefit analysis. The purpose of this is to illustrate the costs of the project and compare them with the benefits and savings to determine if the project is worth pursuing.
+</p>
+
+<p>
+The following table captures the cost and savings actions associated with the WP Project, descriptions of these actions, and the costs or savings associated with them through the first year. At the bottom of the chart is the net savings for the first year of the project.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Action</td>
+<td class="org-left">Action Type</td>
+<td class="org-left">Description</td>
+<td class="org-left">First year costs (- indicates anticipated savings)</td>
+</tr>
+
+<tr>
+<td class="org-left">Purchase Web-based product and licenses</td>
+<td class="org-left">Cost</td>
+<td class="org-left">Initial investment for WP Project</td>
+<td class="org-left">$400,000.00</td>
+</tr>
+
+<tr>
+<td class="org-left">Software installation and training</td>
+<td class="org-left">Cost</td>
+<td class="org-left">Cost for IT group to install new software and for the training group to train all employees</td>
+<td class="org-left">$100,000.00</td>
+</tr>
+
+<tr>
+<td class="org-left">Reduce HR and payroll staff by 5 employees</td>
+<td class="org-left">Savings</td>
+<td class="org-left">An immediate reduction in overhead equal to the annual salary of 3 HR specialists and 2 payroll analysts.</td>
+<td class="org-left">-$183,495.00</td>
+</tr>
+
+<tr>
+<td class="org-left">Managers no longer required to work non-billable payroll and administrative tasks</td>
+<td class="org-left">Savings</td>
+<td class="org-left">18 regional managers currently average 16 hours per week non-billable time. It is anticipated that this number will be reduced to no more than 2 hours per week. At an average of $36.00 per hour this results in ($36.00 x 14 hours/wk reduced non-billable time x 18 managers) $9072.00 increased revenue per week.</td>
+<td class="org-left">-$471,744.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgc2652df" class="outline-2">
+<h2 id="orgc2652df"><span class="section-number-2">6.</span> Alternative Analysis</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+All business problems may be addressed by any number of alternative projects. While the business case is the result of having selected one such option, a brief summary of considered alternatives should also be included—one of which should be the status quo, or doing nothing. The reasons for not selecting the alternatives should also be included.
+</p>
+
+<p>
+The following alternative options have been considered to address the business problem. These alternatives were not selected for a number of reasons which are also explained below.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">No Project (Status Quo)</th>
+<th scope="col" class="org-left">Reasons For Not Selecting Alternative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Keep the mainframe legacy system in place</td>
+<td class="org-left">Unnecessary expenditure of funds for increased staffing levels</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Continued occurrence of a high number of data errors</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Poor and untimely reporting</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Lack of automation</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Alternative Option</td>
+<td class="org-left">Reasons For Not Selecting Alternative</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Outsource the implementation of a web-based platform</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Significantly higher cost</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Expertise already exists in house</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Vendor’s lack of familiarity with our internal requirements</td>
+</tr>
+
+<tr>
+<td class="org-left">Alternative Option</td>
+<td class="org-left">Reasons For Not Selecting Alternative</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Develop software internally</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Lack of qualified resources</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Significant cost associated with software design</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Timeframe required is too long</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org9e35d64" class="outline-2">
+<h2 id="org9e35d64"><span class="section-number-2">7.</span> Approvals</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+The business case is a document with which approval is granted or denied to move forward with the creation of a project. Therefore, the document should receive approval or disapproval from its executive review board
+</p>
+
+<p>
+The signatures of the people below indicate an understanding in the purpose and content of this Business Case by those signing it. By signing this document you indicate that you approve of the proposed project outlined in this business case and that the next steps may be taken to create a formal project in accordance with the details outlined herein.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Approver Name</th>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-left">Signature</th>
+<th scope="col" class="org-left">Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Black, J.</td>
+<td class="org-left">President and COO</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Brown, A.</td>
+<td class="org-left">Executive VP</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: \today</p>
+<p class="author">Author: Ricardo Antunes</p>
+<p class="date">Created: 2022-03-21 Mon 21:50</p>
+</div>
+</body>
+</html>
