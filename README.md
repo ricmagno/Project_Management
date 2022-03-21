@@ -1,27 +1,27 @@
 
 # Table of Contents
 
-1.  [Project Management](#org5ff9f91)
-    1.  [STRATEGY ARTIFACTS](#orgf3ae687)
-    2.  [LOGS AND REGISTERS](#org74c1309)
-    3.  [PLANS](#org77d3af4)
-    4.  [HIERARCHY CHARTS](#org4aabec1)
-    5.  [BASELINES](#orgfd62c0c)
-    6.  [VISUAL DATA AND INFORMATION](#org962d3ee)
-    7.  [REPORTS](#org1cc2956)
-    8.  [AGREEMENTS AND CONTRACTS](#orgb149b04)
-    9.  [OTHER ARTIFACTS](#orgc0efedc)
-    10. [ARTIFACTS APPLIED ACROSS PERFORMANCE DOMAINS](#org2e91362)
+1.  [Project Management](#org63eb39e)
+    1.  [STRATEGY ARTIFACTS](#org8453165)
+    2.  [LOGS AND REGISTERS](#orgd2c523a)
+    3.  [PLANS](#orge3fcf42)
+    4.  [HIERARCHY CHARTS](#orgc19d57a)
+    5.  [BASELINES](#orged22c12)
+    6.  [VISUAL DATA AND INFORMATION](#orgdc6c375)
+    7.  [REPORTS](#org2823180)
+    8.  [AGREEMENTS AND CONTRACTS](#org42fcd0b)
+    9.  [OTHER ARTIFACTS](#orgd655ff3)
+    10. [ARTIFACTS APPLIED ACROSS PERFORMANCE DOMAINS](#org94b9d2f)
 
 
-<a id="org5ff9f91"></a>
+<a id="org63eb39e"></a>
 
 # Project Management
 
 Project Management org templates
 
 
-<a id="orgf3ae687"></a>
+<a id="org8453165"></a>
 
 ## STRATEGY ARTIFACTS
 
@@ -35,7 +35,7 @@ Documents that are created prior to or at the start of the project that address 
 -   Roadmap. This document provides a high-level time line that depicts milestones, significant events, reviews, and decision points.
 
 
-<a id="org74c1309"></a>
+<a id="orgd2c523a"></a>
 
 ## LOGS AND REGISTERS
 
@@ -51,7 +51,7 @@ Logs and registers are used to record continuously evolving aspects of the proje
 -   Stakeholder register. A stakeholder register records information about project stakeholders, which includes an assessment and classification of project stakeholders.
 
 
-<a id="org77d3af4"></a>
+<a id="orge3fcf42"></a>
 
 ## PLANS
 
@@ -74,7 +74,7 @@ A plan is a proposed means of accomplishing something. Project teams develop pla
 -   Test plan. This document describes deliverables that will be tested, tests that will be conducted, and the processes that will be used in testing. It forms the basis for formally testing the components and deliverables.
 
 
-<a id="org4aabec1"></a>
+<a id="orgc19d57a"></a>
 
 ## HIERARCHY CHARTS
 
@@ -87,7 +87,7 @@ Hierarchy charts begin with high-level information that is progressively decompo
 -   Work breakdown structure. This chart is a hierarchical decomposition of the total scope of work to be carried out by the project team to accomplish the project objectives and create the required deliverables.
 
 
-<a id="orgfd62c0c"></a>
+<a id="orged22c12"></a>
 
 ## BASELINES
 
@@ -103,7 +103,7 @@ are used for comparison to manage, measure, and control project execution.
 -   Scope baseline. This baseline is the approved version of a scope statement, work breakdown structure (WBS), and its associated WBS dictionary that can be changed using formal change control procedures and is used as the basis for comparison to actual results.
 
 
-<a id="org962d3ee"></a>
+<a id="orgdc6c375"></a>
 
 ## VISUAL DATA AND INFORMATION
 
@@ -140,7 +140,7 @@ to the rest of the organization, enabling timely knowledge sharing.
 -   Velocity chart. This chart tracks the rate at which the deliverables are produced, validated, and accepted within a predefined interval.
 
 
-<a id="org1cc2956"></a>
+<a id="org2823180"></a>
 
 ## REPORTS
 
@@ -151,7 +151,7 @@ Reports are formal records or summaries of information. Reports communicate rele
 -   Status report. This document provides a report on the current status of the project. It may include information on progress since the last report and forecasts for cost and schedule performance.
 
 
-<a id="orgb149b04"></a>
+<a id="org42fcd0b"></a>
 
 ## AGREEMENTS AND CONTRACTS
 
@@ -168,7 +168,7 @@ time period. These contracts can be used for architectural, engineering, or info
 -   Other agreements. Other types of agreements include memorandum of understanding (MOU), memorandum of agreement (MOA), service level agreement (SLA), basic ordering agreement (BOA), among others.
 
 
-<a id="orgc0efedc"></a>
+<a id="orgd655ff3"></a>
 
 ## OTHER ARTIFACTS
 
@@ -192,7 +192,7 @@ and operating guidelines, and establishes clear expectations regarding acceptabl
 -   User story. A user story is a brief description of an outcome for a specific user, which is a promise of a conversation to clarify details.
 
 
-<a id="org2e91362"></a>
+<a id="org94b9d2f"></a>
 
 ## ARTIFACTS APPLIED ACROSS PERFORMANCE DOMAINS
 
@@ -711,7 +711,7 @@ Different artifacts are more likely to be useful in different performance domain
 
 
 <tr>
-<td class="org-left">Work breakdown structure</td>
+<td class="org-left"><a href="./Hierarchy_chart/work_breakdown_structure.html">Work breakdown structure</a></td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>

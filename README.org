@@ -164,7 +164,7 @@ label:artifacts_mapping
 | Product breakdown structure                |               |                |                 | x             |                 | x              |                |                |
 | Resource breakdown structure               | x             |                |                 | x             | x               |                | x              |                |
 | Risk breakdown structure                   |               |                |                 |               | x               |                |                | x              |
-| [[Hierarchy_chart/work_breakdown_structure.org][Work breakdown structure]]                   |               |                |                 | x             |                 | x              | x              |                |
+| [[./Hierarchy_chart/work_breakdown_structure.org][Work breakdown structure]]                   |               |                |                 | x             |                 | x              | x              |                |
 |--------------------------------------------+---------------+----------------+-----------------+---------------+-----------------+----------------+----------------+----------------|
 | *Baseline:*                                |               |                |                 |               |                 |                |                |                |
 |--------------------------------------------+---------------+----------------+-----------------+---------------+-----------------+----------------+----------------+----------------|
