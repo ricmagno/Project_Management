@@ -1,7 +1,6 @@
 ◉ Work breakdown structure:
 ** Capex 2022 WBS
 
-
 #+CAPTION: Work breakdow structure
 #+NAME: fig_wbs
 label:fig_wbs
@@ -10,12 +9,15 @@ label:fig_wbs
 
 #+begin_src plantuml :file Resources/wbs.eps
 @startwbs
-+ Capex 2022
-++ Slurry relocation/improvement
-++ Powder packing
-++ Squash
+
+ * Capex 2022
+ ** Slurry
+ *** Relocation
+ *** Improvement
+ *** Pre/pos evaporation
+ ** Miling room
+ ** Powder packing
+ ** Squash lines
+
 @endwbs
 #+end_src
-
-#+RESULTS:
-[[file:Resources/wbs.eps]]
