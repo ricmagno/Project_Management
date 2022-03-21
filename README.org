@@ -120,38 +120,107 @@ Different artifacts are more likely to be useful in different performance domain
 
 #+CAPTION: Mapping of Artifacts Likely to Be Used in Each Performance Domain
 label:artifacts_mapping
-| Artifact                                               | Team | Stakeholders | Dev Approach and Life Cycle | Planning | Project Work | Delivery | Measurement | Uncertainty |
-|--------------------------------------------------------+------+--------------+-----------------------------+----------+--------------+----------+-------------+-------------|
-| *Strategy Artifacts:*                                  |      |              |                             |          |              |          |             |             |
-|--------------------------------------------------------+------+--------------+-----------------------------+----------+--------------+----------+-------------+-------------|
-| Business case                                          |      | x            |                             | x        |              |          |             |             |
-| Project brief                                          |      | x            |                             | x        |              |          |             |             |
-| Project charter                                        |      | x            |                             | x        |              |          |             |             |
-| Project vision statement                               |      | x            |                             | x        |              |          |             |             |
-| Roadmap                                                |      | x            | x                           | x        |              |          |             |             |
-| *Log and Register Artifacts:*                          |      |              |                             |          |              |          |             |             |
-| Assumption log                                         |      |              |                             | x        | x            | x        |             | x           |
-| Backlog                                                |      |              |                             | x        | x            | x        |             |             |
-| Change log                                             |      |              |                             |          | x            | x        |             |             |
-| Issue log                                              |      |              |                             |          | x            |          |             |             |
-| Lessons learned register                               |      |              |                             |          | x            |          |             |             |
-| Risk-adjusted backlog                                  |      |              |                             | x        |              |          |             | x           |
-| Risk register                                          |      |              |                             | x        | x            | x        |             | x           |
-| Stakeholder register                                   |      | x            |                             | x        |              |          |             |             |
-| *Plan Artifacts:*                                      |      |              |                             | x        | x            | x        |             |             |
-| Change control plan                                    |      | x            |                             | x        | x            |          |             |             |
-| Communications management plan                         |      |              |                             | x        |              |          |             |             |
-| Cost management plan                                   |      |              |                             | x        |              |          |             |             |
-| Iteration plan                                         |      |              |                             | x        |              |          |             |             |
-| Procurement management plan                            |      |              |                             | x        | x            |          |             |             |
-| Project management plan                                |      | x            |                             | x        | x            |          |             |             |
-| Quality management plan                                |      |              |                             | x        | x            |          |             |             |
-| Release plan                                           |      |              |                             | x        |              | x        |             |             |
-| Requirements management plan                           |      |              |                             | x        |              | x        |             |             |
-| Resource management plan                               |      |              |                             | x        | x            |          |             |             |
-| Risk management plan                                   |      |              |                             | x        | x            |          |             | x           |
-| Scope management plan                                  |      |              |                             | x        |              | x        |             |             |
-| Team Stakeholders                                      |      |              |                             |          |              |          |             |             |
-| Dev Approach and Life Cycle                            |      |              |                             |          |              |          |             |             |
-| Planning Project Work Delivery Measurement Uncertainty |      |              |                             |          |              |          |             |             |
-|                                                        |      |              |                             |          |              |          |             |             |
+| Artifact                                   | Team | Stakeholders | Dev Approach and Life Cycle | Planning | Project Work | Delivery | Measurement | Uncertainty |
+|--------------------------------------------+------+--------------+-----------------------------+----------+--------------+----------+-------------+-------------|
+| *Strategy Artifacts:*                      |      |              |                             |          |              |          |             |             |
+|--------------------------------------------+------+--------------+-----------------------------+----------+--------------+----------+-------------+-------------|
+| Business case                              |      | x            |                             | x        |              |          |             |             |
+| Project brief                              |      | x            |                             | x        |              |          |             |             |
+| Project charter                            |      | x            |                             | x        |              |          |             |             |
+| Project vision statement                   |      | x            |                             | x        |              |          |             |             |
+| Roadmap                                    |      | x            | x                           | x        |              |          |             |             |
+| *Log and Register Artifacts:*              |      |              |                             |          |              |          |             |             |
+| Assumption log                             |      |              |                             | x        | x            | x        |             | x           |
+| Backlog                                    |      |              |                             | x        | x            | x        |             |             |
+| Change log                                 |      |              |                             |          | x            | x        |             |             |
+| Issue log                                  |      |              |                             |          | x            |          |             |             |
+| Lessons learned register                   |      |              |                             |          | x            |          |             |             |
+| Risk-adjusted backlog                      |      |              |                             | x        |              |          |             | x           |
+| Risk register                              |      |              |                             | x        | x            | x        |             | x           |
+| Stakeholder register                       |      | x            |                             | x        |              |          |             |             |
+|--------------------------------------------+------+--------------+-----------------------------+----------+--------------+----------+-------------+-------------|
+| *Plan Artifacts:*                          |      |              |                             | x        | x            | x        |             |             |
+|--------------------------------------------+------+--------------+-----------------------------+----------+--------------+----------+-------------+-------------|
+| Change control plan                        |      | x            |                             | x        | x            |          |             |             |
+| Communications management plan             |      |              |                             | x        |              |          |             |             |
+| Cost management plan                       |      |              |                             | x        |              |          |             |             |
+| Iteration plan                             |      |              |                             | x        |              |          |             |             |
+| Procurement management plan                |      |              |                             | x        | x            |          |             |             |
+| Project management plan                    |      | x            |                             | x        | x            |          |             |             |
+| Quality management plan                    |      |              |                             | x        | x            |          |             |             |
+| Release plan                               |      |              |                             | x        |              | x        |             |             |
+| Requirements management plan               |      |              |                             | x        |              | x        |             |             |
+| Resource management plan                   |      |              |                             | x        | x            |          |             |             |
+| Risk management plan                       |      |              |                             | x        | x            |          |             | x           |
+| Scope management plan                      |      |              |                             | x        |              | x        |             |             |
+| Schedule management plan                   |      |              |                             | x        | x            | x        |             |             |
+| Stakeholder engagement plan                |      | x            |                             | x        |              |          |             |             |
+| Test plan                                  |      |              |                             | x        | x            | x        | x           |             |
+|--------------------------------------------+------+--------------+-----------------------------+----------+--------------+----------+-------------+-------------|
+| *Hierarchy Chart Artifacts:*               |      |              |                             |          |              |          |             |             |
+|--------------------------------------------+------+--------------+-----------------------------+----------+--------------+----------+-------------+-------------|
+| Organizational breakdown structure         | x    | x            |                             | x        |              |          |             |             |
+| Product breakdown structure                |      |              |                             | x        |              | x        |             |             |
+| Resource breakdown structure               | x    |              |                             | x        | x            |          | x           |             |
+| Risk breakdown structure                   |      |              |                             |          | x            |          |             | x           |
+| Work breakdown structure                   |      |              |                             | x        |              | x        | x           |             |
+|--------------------------------------------+------+--------------+-----------------------------+----------+--------------+----------+-------------+-------------|
+| *Baseline Artifacts:*                      |      |              |                             |          |              |          |             |             |
+|--------------------------------------------+------+--------------+-----------------------------+----------+--------------+----------+-------------+-------------|
+| Budget                                     |      |              |                             | x        | x            |          | x           |             |
+| Milestone schedule                         |      |              | x                           | x        | x            |          | x           |             |
+| Performance measurement baseline           |      |              |                             | x        | x            | x        | x           |             |
+| Project schedule                           |      |              |                             | x        | x            |          | x           |             |
+| Scope baseline                             |      |              |                             | x        | x            |          | x           |             |
+|--------------------------------------------+------+--------------+-----------------------------+----------+--------------+----------+-------------+-------------|
+| *Visual Data and Information Artifacts:*   |      |              |                             | x        | x            | x        | x           |             |
+|--------------------------------------------+------+--------------+-----------------------------+----------+--------------+----------+-------------+-------------|
+| Affinity diagram                           |      |              |                             | x        | x            |          | x           |             |
+| Burn chart                                 |      |              |                             | x        |              | x        | x           |             |
+| Cause-and-effect diagram                   |      |              |                             |          | x            | x        |             | x           |
+| Cycle time chart                           |      |              |                             |          |              | x        | x           |             |
+| Cumulative flow diagram                    |      |              |                             |          |              | x        | x           |             |
+| Dashboard                                  |      |              |                             |          | x            |          | x           |             |
+| Flow chart                                 |      |              |                             |          | x            | x        | x           |             |
+| Gantt chart                                |      |              |                             | x        | x            |          | x           |             |
+| Histogram                                  |      |              |                             |          |              |          | x           |             |
+| Information radiator                       |      |              |                             |          | x            |          | x           |             |
+| Lead time chart                            |      |              |                             |          |              | x        | x           |             |
+| Prioritization matrix                      |      | x            |                             |          | x            | x        |             |             |
+| Project schedule network diagram           |      |              |                             | x        | x            |          |             |             |
+| Requirements traceability matrix           |      |              |                             | x        |              | x        | x           |             |
+| Responsibility assignment matrix           |      |              |                             | x        | x            |          |             |             |
+| Scatter diagram                            |      |              |                             |          | x            | x        | x           |             |
+| S-curve                                    |      |              |                             | x        |              |          | x           |             |
+| Stakeholder engagement assessment matrix   |      | x            |                             | x        | x            |          |             |             |
+| Story map                                  |      |              |                             | x        |              | x        |             |             |
+| Throughput chart                           |      |              |                             |          |              | x        | x           |             |
+| Use case                                   |      |              |                             | x        |              | x        |             |             |
+| Value stream map                           |      |              |                             |          | x            | x        | x           |             |
+| Velocity chart                             |      |              |                             |          |              | x        | x           |             |
+|--------------------------------------------+------+--------------+-----------------------------+----------+--------------+----------+-------------+-------------|
+| *Report Artifacts:*                        |      |              |                             |          |              |          |             |             |
+|--------------------------------------------+------+--------------+-----------------------------+----------+--------------+----------+-------------+-------------|
+| Quality report                             |      |              |                             |          | x            | x        | x           |             |
+| Risk report                                |      |              |                             |          | x            |          |             | x           |
+| Status report                              |      |              |                             |          | x            |          |             |             |
+|--------------------------------------------+------+--------------+-----------------------------+----------+--------------+----------+-------------+-------------|
+| *Agreements and Contracts:*                |      |              |                             |          |              |          |             |             |
+|--------------------------------------------+------+--------------+-----------------------------+----------+--------------+----------+-------------+-------------|
+| Fixed-price                                |      | x            |                             | x        | x            | x        | x           | x           |
+| Cost-reimbursable                          |      | x            |                             | x        | x            | x        | x           | x           |
+| Time and materials                         |      | x            |                             | x        | x            | x        | x           | x           |
+| Indefinite time indefinite quantity (IDIQ) |      | x            |                             | x        | x            | x        | x           | x           |
+| Other agreements                           |      | x            |                             | x        | x            | x        | x           | x           |
+|--------------------------------------------+------+--------------+-----------------------------+----------+--------------+----------+-------------+-------------|
+| *Other Artifacts:*                         |      |              |                             |          |              |          |             |             |
+|--------------------------------------------+------+--------------+-----------------------------+----------+--------------+----------+-------------+-------------|
+| Activity list                              | x    | x            |                             | x        | x            |          |             |             |
+| Bid documents                              |      | x            |                             | x        | x            |          |             |             |
+| Metrics                                    |      |              |                             | x        |              | x        | x           |             |
+| Project calendars                          | x    |              |                             | x        | x            |          |             |             |
+| Requirements documentation                 |      | x            |                             | x        |              | x        | x           |             |
+| Project team charter                       | x    |              |                             | x        |              |          |             |             |
+| User story                                 |      | x            |                             | x        |              | x        |             |             |
+
+
