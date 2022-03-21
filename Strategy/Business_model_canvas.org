@@ -1,0 +1,91 @@
+◉ Business Model Canvas Work breakdown structure:
+** Capex 2022 WBS
+
+#+CAPTION: Work breakdow structure
+#+NAME: fig_wbs
+label:fig_wbs
+#+ATTR_HTML: :height 300
+#+ATTR_LATEX: :height 150
+
+#+begin_src plantuml :file Resources/business_model_canvas.eps
+@startuml
+class Partners {
+ **test list 1**
+ * Bullet list
+ * Second item
+ ** Sub item
+ *** Sub sub item
+ * Third item
+----
+**test list 2**
+# Numbered list
+# Second item
+## Sub item
+## Another sub item
+# Third item
+}
+@enduml
+#+end_src
+
+#+RESULTS:
+[[file:Resources/business_model_canvas.eps]]
+
+#+begin_src plantuml :file Resources/business_model_canvas_test.eps
+	  @startuml
+	object Key_partners {
+	  This is not ~___underscored__.
+	  This is not ~""monospaced"".
+	}
+	  object Key_activities {
+	This is not ~___underscored__.
+	This is not ~""monospaced"".
+      }
+      object Key_resources {
+      This is not ~___underscored__.
+      This is not ~""monospaced"".
+    }
+	object Value_prepositions {
+	  This is not ~___underscored__.
+	  This is not ~""monospaced"".
+	}
+	  object Customer_relationships {
+	This is not ~___underscored__.
+	This is not ~""monospaced"".
+      }
+      object Key_Channels {
+      This is not ~___underscored__.
+      This is not ~""monospaced"".
+    }
+      object Customer_segments {
+      This is not ~___underscored__.
+      This is not ~""monospaced"".
+    }
+      object Cost_structure {
+      This is not ~___underscored__.
+      This is not ~""monospaced"".
+    }
+      object Revenue_Streams {
+      This is not ~___underscored__.
+      This is not ~""monospaced"".
+    }
+
+
+legend
+  # Numbered list
+  # Second item
+  ## Sub item
+  ## Another sub item
+        * Can't quite mix 
+        * Numbers and bullets
+  # Third item
+end legend
+
+
+	  
+  @enduml
+
+
+#+end_src
+
+#+RESULTS:
+[[file:Resources/business_model_canvas_test.eps]]

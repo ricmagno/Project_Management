@@ -1,0 +1,4 @@
+* Constraints
+** Floor space
+** Steam capacity
+** Power (not and issue withour IQF)

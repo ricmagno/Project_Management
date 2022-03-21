@@ -40,9 +40,12 @@ The intended audience of the <Project Name> project charter is the project spons
 * Justification
 ** Business Need
 [Example: A data collection system is necessary to conduct a national program of surveillance and research to monitor and characterize the x epidemic, including its determinants and the epidemiologic dynamics such as prevalence, incidence, and antiretroviral resistance, and to guide public health action at the federal, state and local levels. Data collection activities will assist with monitoring the incidence and prevalence of x infection, and x-related morbidity and mortality in the population, estimate incidence of x infection, identify changes in trends of x transmission, and identify populations at risk.)]
+
+
 ** Public Health And Business Impact
 [Example: System x collects information about x infection as the jurisdictional, regional, and national levels and will assist in monitoring trends in x transmission rates, incidence rates and x morbidity and mortality trends to help determine public health impact.]
 ** Strategic Alignment
+
 | Goal                                                              | Project Response Rank^[fn:project_aligment_scale] | Comments |
 |-------------------------------------------------------------------+---------------------------------------------------+----------|
 | *NC / Division / Branch Strategic Goals:*                         |                                                   |          |
@@ -85,6 +88,8 @@ The following table presents the major deliverables that the project’s product
 * Duration
 ** Timeline
 [An example of a high-level timeline is provided below.]
+** Deadline
+2023 Season
  
 ** Executive Milestones 
 [Example: For CPIC major/tactical projects, these milestones could be used to complete the Funding Plan/Cost and Schedule section of the OMB Exhibit 300.]
