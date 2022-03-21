@@ -1,11 +1,30 @@
 
 # Table of Contents
 
+1.  [Project Management](#org5ff9f91)
+    1.  [STRATEGY ARTIFACTS](#orgf3ae687)
+    2.  [LOGS AND REGISTERS](#org74c1309)
+    3.  [PLANS](#org77d3af4)
+    4.  [HIERARCHY CHARTS](#org4aabec1)
+    5.  [BASELINES](#orgfd62c0c)
+    6.  [VISUAL DATA AND INFORMATION](#org962d3ee)
+    7.  [REPORTS](#org1cc2956)
+    8.  [AGREEMENTS AND CONTRACTS](#orgb149b04)
+    9.  [OTHER ARTIFACTS](#orgc0efedc)
+    10. [ARTIFACTS APPLIED ACROSS PERFORMANCE DOMAINS](#org2e91362)
 
+
+<a id="org5ff9f91"></a>
+
+# Project Management
 
 Project Management org templates
 
-\## STRATEGY ARTIFACTS
+
+<a id="orgf3ae687"></a>
+
+## STRATEGY ARTIFACTS
+
 Documents that are created prior to or at the start of the project that address strategic, business, or high-level information about the project. Strategy artifacts are developed at the start of a project and do not normally change, though they may be reviewed throughout the project.
 
 -   Business case. A business case is a value proposition for a proposed project that may include financial and nonfinancial benefits.
@@ -15,7 +34,11 @@ Documents that are created prior to or at the start of the project that address 
 -   Project vision statement. This document is a concise, high-level description of the project that states the purpose, and inspires the project team to contribute to the project.
 -   Roadmap. This document provides a high-level time line that depicts milestones, significant events, reviews, and decision points.
 
-\## LOGS AND REGISTERS
+
+<a id="org74c1309"></a>
+
+## LOGS AND REGISTERS
+
 Logs and registers are used to record continuously evolving aspects of the project. They are updated throughout the project. The terms log and register are sometimes used interchangeably. It is not uncommon to see the term risk register or risk log referring to the same artifact.
 
 -   Assumption log. An assumption is a factor that is considered to be true, real, or certain, without proof or demonstration. A constraint is a factor that limits the options for managing a project, program, portfolio, or process. An assumption log records all assumptions and constraints throughout the project.
@@ -27,7 +50,11 @@ Logs and registers are used to record continuously evolving aspects of the proje
 -   Risk register. A risk register is a repository in which outputs of risk management processes are recorded. Information in a risk register can include the person responsible for managing the risk, probability, impact, risk score, planned risk responses, and other information used to get a high-level understanding of individual risks.
 -   Stakeholder register. A stakeholder register records information about project stakeholders, which includes an assessment and classification of project stakeholders.
 
-\## PLANS
+
+<a id="org77d3af4"></a>
+
+## PLANS
+
 A plan is a proposed means of accomplishing something. Project teams develop plans for individual aspects of a project and/or combine all of that information into an overarching project management plan. Plans generally are written documents but may also be reflected on visual/ virtual whiteboards.
 
 -   Change control plan. A change control plan is a component of the project management plan that establishes the change control board, documents the extent of its authority, and describes how the change control system will be implemented.
@@ -46,7 +73,11 @@ A plan is a proposed means of accomplishing something. Project teams develop pla
 -   Stakeholder engagement plan. This plan is a component of the project management plan that identifies the strategies and actions required to promote productive involvement of stakeholders in project or program decision making and execution.
 -   Test plan. This document describes deliverables that will be tested, tests that will be conducted, and the processes that will be used in testing. It forms the basis for formally testing the components and deliverables.
 
-\## HIERARCHY CHARTS
+
+<a id="org4aabec1"></a>
+
+## HIERARCHY CHARTS
+
 Hierarchy charts begin with high-level information that is progressively decomposed into greater levels of detail. The information at the upper levels encompasses all the information at the lower or subsidiary levels. Hierarchy charts are often progressively elaborated into greater levels of detail as more information is known about the project.
 
 -   Organizational breakdown structure. This chart is a hierarchical representation of the project organization, which illustrates the relationship between project activities and the organizational units that will perform those activities.
@@ -55,7 +86,11 @@ Hierarchy charts begin with high-level information that is progressively decompo
 -   Risk breakdown structure. This chart is a hierarchical representation of potential sources of risks.
 -   Work breakdown structure. This chart is a hierarchical decomposition of the total scope of work to be carried out by the project team to accomplish the project objectives and create the required deliverables.
 
-\## BASELINES
+
+<a id="orgfd62c0c"></a>
+
+## BASELINES
+
 A baseline is the approved version of a work product or plan. Actual performance is compared to baselines to identify variances.
 
 -   Budget. A budget is the approved estimate for the project or any work breakdown structure (WBS) component or any schedule activity.
@@ -67,7 +102,11 @@ are used for comparison to manage, measure, and control project execution.
 -   Project schedule. A project schedule is an output of a schedule model that presents linked activities with planned dates, durations, milestones, and resources.
 -   Scope baseline. This baseline is the approved version of a scope statement, work breakdown structure (WBS), and its associated WBS dictionary that can be changed using formal change control procedures and is used as the basis for comparison to actual results.
 
-\## VISUAL DATA AND INFORMATION
+
+<a id="org962d3ee"></a>
+
+## VISUAL DATA AND INFORMATION
+
 Visual data and information are artifacts that organize and present data and information in a visual format, such as charts, graphs, matrices, and diagrams. Visualizing data makes it easier to absorb data and turn it into information. Visualization artifacts are often produced after data have been collected and analyzed. These artifacts can aid in decision making and prioritization.
 
 -   Affinity diagram. This diagram shows large numbers of ideas classified into groups for review and analysis.
@@ -100,14 +139,22 @@ to the rest of the organization, enabling timely knowledge sharing.
 -   Value stream map. This is a lean enterprise method used to document, analyze, and improve the flow of information or materials required to produce a product or service for a customer. Value stream maps can be used to identify waste.
 -   Velocity chart. This chart tracks the rate at which the deliverables are produced, validated, and accepted within a predefined interval.
 
-\## REPORTS
+
+<a id="org1cc2956"></a>
+
+## REPORTS
+
 Reports are formal records or summaries of information. Reports communicate relevant (usually summary level) information to stakeholders. Often reports are given to stakeholders who are interested in the project status, such as sponsors, business owners, or PMOs.
 
 -   Quality report. This project document includes quality management issues, recommendations for corrective actions, and a summary of findings from quality control activities. It may include recommendations for process, project, and product improvements.
 -   Risk report. This project document is developed progressively throughout the risk management processes and summarizes information on individual project risks and the level of overall project risk.
 -   Status report. This document provides a report on the current status of the project. It may include information on progress since the last report and forecasts for cost and schedule performance.
 
-\## AGREEMENTS AND CONTRACTS
+
+<a id="orgb149b04"></a>
+
+## AGREEMENTS AND CONTRACTS
+
 An agreement is any document or communication that defines the intentions of the parties. In projects, agreements take the form of contracts or other defined understandings. A contract is
 a mutually binding agreement that obligates the seller to provide the specified product, service, or result and obligates the buyer to pay for it. There are different types of contracts, some of which fall within a category of fixed-price or cost-reimbursable contracts.
 
@@ -120,7 +167,11 @@ time period. These contracts can be used for architectural, engineering, or info
 
 -   Other agreements. Other types of agreements include memorandum of understanding (MOU), memorandum of agreement (MOA), service level agreement (SLA), basic ordering agreement (BOA), among others.
 
-\## OTHER ARTIFACTS
+
+<a id="orgc0efedc"></a>
+
+## OTHER ARTIFACTS
+
 The documents and deliverables described here do not fit into a specific category; however, they are important artifacts that are used for a variety of purposes.
 
 -   Activity list. This document provides a tabulation of schedule activities that shows the activity description, activity identifier, and a sufficiently detailed scope of work description so project team members understand what work is to be performed.
@@ -140,7 +191,11 @@ and operating guidelines, and establishes clear expectations regarding acceptabl
 
 -   User story. A user story is a brief description of an outcome for a specific user, which is a promise of a conversation to clarify details.
 
-\## ARTIFACTS APPLIED ACROSS PERFORMANCE DOMAINS
+
+<a id="org2e91362"></a>
+
+## ARTIFACTS APPLIED ACROSS PERFORMANCE DOMAINS
+
 Different artifacts are more likely to be useful in different performance domains. While the delivery approach, product, and organizational environment will determine which artifacts are most applicable for a specific project, there are some performance domains that are more likely to make use of specific artifacts. Table 4-3 suggests the performance domain(s) where each artifact is more likely to be of use; however, the project manager and/or project team has the ultimate responsibility for selecting and tailoring the artifacts for their project.
 
 <artifacts_mapping>
@@ -170,20 +225,20 @@ Different artifacts are more likely to be useful in different performance domain
 <thead>
 <tr>
 <th scope="col" class="org-left">Artifact</th>
-<th scope="col" class="org-left">Team</th>
-<th scope="col" class="org-left">Stakeholders</th>
-<th scope="col" class="org-left">Dev Approach and Life Cycle</th>
-<th scope="col" class="org-left">Planning</th>
-<th scope="col" class="org-left">Project Work</th>
-<th scope="col" class="org-left">Delivery</th>
-<th scope="col" class="org-left">Measurement</th>
-<th scope="col" class="org-left">Uncertainty</th>
+<th scope="col" class="org-left">Team<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup></th>
+<th scope="col" class="org-left">Stake<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup></th>
+<th scope="col" class="org-left">DA LC <sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup></th>
+<th scope="col" class="org-left">Plan<sup><a id="fnr.4" class="footref" href="#fn.4" role="doc-backlink">4</a></sup></th>
+<th scope="col" class="org-left">P Work<sup><a id="fnr.5" class="footref" href="#fn.5" role="doc-backlink">5</a></sup></th>
+<th scope="col" class="org-left">Deliv<sup><a id="fnr.6" class="footref" href="#fn.6" role="doc-backlink">6</a></sup></th>
+<th scope="col" class="org-left">Measu<sup><a id="fnr.7" class="footref" href="#fn.7" role="doc-backlink">7</a></sup></th>
+<th scope="col" class="org-left">Uncer<sup><a id="fnr.8" class="footref" href="#fn.8" role="doc-backlink">8</a></sup></th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td class="org-left"><b>Strategy Artifacts:</b></td>
+<td class="org-left"><b>Strategy:</b></td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
@@ -376,10 +431,11 @@ Different artifacts are more likely to be useful in different performance domain
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 </tr>
+</tbody>
 
-
+<tbody>
 <tr>
-<td class="org-left"><b>Plan Artifacts:</b></td>
+<td class="org-left"><b>Plan:</b></td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
@@ -389,8 +445,9 @@ Different artifacts are more likely to be useful in different performance domain
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 </tr>
+</tbody>
 
-
+<tbody>
 <tr>
 <td class="org-left">Change control plan</td>
 <td class="org-left">&#xa0;</td>
@@ -548,11 +605,24 @@ Different artifacts are more likely to be useful in different performance domain
 
 
 <tr>
-<td class="org-left">Team Stakeholders</td>
+<td class="org-left">Schedule management plan</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
 <td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Stakeholder engagement plan</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
@@ -561,33 +631,21 @@ Different artifacts are more likely to be useful in different performance domain
 
 
 <tr>
-<td class="org-left">Dev Approach and Life Cycle</td>
+<td class="org-left">Test plan</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-
-<tr>
-<td class="org-left">Planning Project Work Delivery Measurement Uncertainty</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
 <td class="org-left">&#xa0;</td>
 </tr>
+</tbody>
 
-
+<tbody>
 <tr>
-<td class="org-left">&#xa0;</td>
+<td class="org-left"><b>Hierarchy Chart:</b></td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
@@ -598,5 +656,723 @@ Different artifacts are more likely to be useful in different performance domain
 <td class="org-left">&#xa0;</td>
 </tr>
 </tbody>
+
+<tbody>
+<tr>
+<td class="org-left">Organizational breakdown structure</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Product breakdown structure</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Resource breakdown structure</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Risk breakdown structure</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Work breakdown structure</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td class="org-left"><b>Baseline:</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td class="org-left">Budget</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Milestone schedule</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Performance measurement baseline</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Project schedule</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Scope baseline</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td class="org-left"><b>Visual Data and Information:</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td class="org-left">Affinity diagram</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Burn chart</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Cause-and-effect diagram</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Cycle time chart</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Cumulative flow diagram</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Dashboard</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Flow chart</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Gantt chart</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Histogram</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Information radiator</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Lead time chart</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Prioritization matrix</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Project schedule network diagram</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Requirements traceability matrix</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Responsibility assignment matrix</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Scatter diagram</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">S-curve</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Stakeholder engagement assessment matrix</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Story map</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Throughput chart</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Use case</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Value stream map</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Velocity chart</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td class="org-left"><b>Report:</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td class="org-left">Quality report</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Risk report</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Status report</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td class="org-left"><b>Agreements and Contracts:</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td class="org-left">Fixed-price</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Cost-reimbursable</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Time and materials</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Indefinite time indefinite quantity (IDIQ)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Other agreements</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td class="org-left"><b>Other:</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td class="org-left">Activity list</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Bid documents</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Metrics</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Project calendars</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Requirements documentation</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Project team charter</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">User story</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">x</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
 </table>
 
+
+# Footnotes
+
+<sup><a id="fn.1" href="#fnr.1">1</a></sup> Team
+
+<sup><a id="fn.2" href="#fnr.2">2</a></sup> Stakeholders
+
+<sup><a id="fn.3" href="#fnr.3">3</a></sup> Dev Approach and Life Cycle
+
+<sup><a id="fn.4" href="#fnr.4">4</a></sup> Planning
+
+<sup><a id="fn.5" href="#fnr.5">5</a></sup> Project Work
+
+<sup><a id="fn.6" href="#fnr.6">6</a></sup> Delivery
+
+<sup><a id="fn.7" href="#fnr.7">7</a></sup> Measurement
+
+<sup><a id="fn.8" href="#fnr.8">8</a></sup> Uncertainty
