@@ -1,0 +1,29 @@
+* Assuumptions
+** Cost of production:
+
+#+BEGIN_SRC python :exports both :results table
+    import pandas as pd
+    costs = pd.DataFrame(
+	{'Item': ['People', 'Steam', 'Electricity','Corn'],
+	 'Cost' : [300, 150, 100,- 1500]})
+    return [x.split(',') for x in test.to_csv().split('\n')]
+#+END_SRC
+
+ #+RESULTS:
+ |   |
+
+
+
+
+| Item        |  Cost | Unit |
+|-------------+-------+------|
+| People      |   300 |      |
+| Steam       |   150 |:=    |
+| Electricity |   100 |      |
+| Corn        | -1500 |      |
+|-------------+-------+------|
+| Total       |  -950 |      |
+#+TBLFM: @6$2=vsum(@I..II)::@7$2=vsum(@I..II)
+-  Corn:	             1,500 $/hr
+Additional income from extra capacity next year: 
+6,000$/MT x 38% profit = $2,300 per MT

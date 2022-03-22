@@ -1,0 +1,19 @@
+* Goals
+** Increase corn production capacity
+** More uptime
+** Better recovery
+** Minimize labour
+** Target: 1,400 MT from fresh
+** Reduce variability in day runs
+** Complete integration with IQF intake line
+** Cultivar investigation team
+** Any upgrade for the long-term
+* Objectives
+** Produce 2000t of fresh corn un 75 days instead of the current 1200t in 100 days[fn:date].
+- Daily average: 26.7 t/d (current: 12 t/d)
+- Hourly average: 1.1 t/h (current: 0.5 t/d)
+
+| Objective | Current | Increase |
+|           |         |          |
+
+[fn:date] Source: Season of 2021

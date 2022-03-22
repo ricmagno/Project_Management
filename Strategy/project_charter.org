@@ -123,11 +123,16 @@ This section provides a summary of estimated spending to meet the objectives of 
 This section identifies the statements believed to be true and from which a conclusion was drawn to define this project charter. 
 1. [Insert description of the first assumption.]
 2. [Insert description of the second assumption.]
+
+#+include: ../Logs_registers/assumptions.org :minlevel 2
+
 ** Constraints
 [Example: There might be time constraints on developing a system that is used to track data of highly infectious diseases like SARS.]
 This section identifies any limitation that must be taken into consideration prior to the initiation of the project.
 1. [Insert description of the first constraint.]
 2. [Insert description of the second constraint.]
+
+#+include: ../Logs_registers/constraints.org :minlevel 2
 ** Risks
 [Example: The risk of accessibility or unavailability of public health partners for obtaining requirements to develop a data collection system may delay project deliverables. A possible mitigation strategy might be to schedule requirement sessions with the partners as early as possible. List the risks that the project sponsor should be aware of before making a decision on funding the project, including risks of not funding the project.]
 | Risk | Mitigation |

@@ -145,7 +145,11 @@ The following constraints apply to the WP Project. As project planning begins an
 There are limited IT resources available to support the WP Project and other, ongoing, IT initiatives.
 There are a limited number of commercial off the shelf (COTS) products to support both payroll and administrative activities.
 As implementation will be done internally and not by the product developers or vendors, there will be limited support from the hardware/software providers.
-4.6 Major Project Milestones
+
+#+include: ../Logs_registers/assumptions.org :minlevel 2
+
+
+** Major Project Milestones
 This section of our template lists the major project milestones and their target completion dates. Since this is the business case, these milestones and target dates are general and in no way final. It is important to note that as the project planning moves forward, a base-lined schedule including all milestones will be completed.
 
 The following are the major project milestones identified at this time. As the project planning moves forward and the schedule is developed, the milestones and their target completion dates will be modified, adjusted, and finalized as necessary to establish the baseline schedule.

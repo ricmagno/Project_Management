@@ -1,4 +1,8 @@
 * Constraints
 ** Floor space
+- Most of equipment in the CCM room is unused
 ** Steam capacity
-** Power (not and issue withour IQF)
+- Outdated boilers
+- High downtime
+- Boilers 2 and 3 requires refurbishement of replacement
+** Electricity

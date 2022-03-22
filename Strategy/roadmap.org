@@ -1,0 +1,29 @@
+* Roadmap
+
+#+begin_src plantuml :results file :file Resources/roadmap.png
+  @startgantt
+     <style>
+     ganttDiagram {
+       timeline {
+	 LineColor transparent
+	 FontColor transparent
+      }
+     }
+     </style>
+
+  hide footbox
+  [2022 Use of IQF intake] lasts 15 days
+  [2022 Use of IQF intake] is colored in GreenYellow/Green
+  -- Capex 2022 --
+  then [2023 Slurry, drum#1,  packline] lasts 15 days
+  then [2024 Milling, drum#2, dryer] lasts 15 days
+  then [2025 New dryer] lasts 15 days
+  @endgantt
+
+#+end_src
+
+#+CAPTION: Roadmap
+label:fig_roadmap
+#+ATTR_HTML: :height 100
+#+ATTR_LATEX: :height 70 
+[[file:Resources/roadmap.png]]

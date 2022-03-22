@@ -1,0 +1,30 @@
+* Project Name and Date
+
+The project name and date that the brief was made are located on the top right-hand side of the document. This identifies what it is and attaches it to one project, which is helpful when your organization is managing a program or portfolio. It also makes it easier to find after the project is completed; you may want to use the brief as historical data for a new, similar project.
+
+* Summary 
+#+include: ../Common/summary.org :minlevel 2
+
+* Goals and Objectives
+
+After that comes the meat of the project brief. It begins with the client for the project and then a summary of the project. Then, you input the goals and objectives of the project; in other words, the agreed upon outcomes and how you’re going to get there.
+
+#+include: ../Common/goals.org :minlevel 2
+
+* Constraints and Assumptions
+
+#+include: ../Logs_registers/constraints.org :minlevel 2
+
+Next, there’s a space to outline the constraints and assumptions of the project. These are the things that might limit your progress and other things you’re taking for granted that might end up surprising you. This is followed by the scope of the project, which outlines deliverables.
+
+* Target Audience
+
+* Responsible Parties
+
+Whether you’re making a product or service, there’s a target audience and they must be defined in the project brief. Here, you can outline who they are and how the project meets a need they have. The next space is where you identify who is responsible for determining that the project is successful and by what criteria they will measure that success.
+
+* Budget 
+
+* Timeline
+
+While not a fully realized budget, there is a place for you to outline the costs associated with executing the project. There is also a timeline or schedule of events that will make up the project. This will show the duration of the project by making an accurate estimation of the time it will take between the start and the finish of the project.
